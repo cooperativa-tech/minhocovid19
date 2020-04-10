@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
 
 /* eslint-disable react/forbid-prop-types */
 App.propTypes = {
-  Component: PropTypes.object.isRequired,
+  Component: PropTypes.func.isRequired,
   pageProps: PropTypes.object.isRequired,
 };
 /* eslint-enable */

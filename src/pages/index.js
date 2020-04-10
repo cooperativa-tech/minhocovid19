@@ -1,4 +1,5 @@
 import React from "react";
+
 import Layout from "root/components/Layout";
 
 export default function HomePage() {
