@@ -5,10 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/data/pages/index.json
+  path: cms/pages/index.json
   label: Home Page
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: cms/assets
+public_path: "/assets"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
