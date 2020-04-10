@@ -7,7 +7,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "eslint src next.config.js postcss.config.js",
-    "lint-styles": "stylelint src/**/*.css"
+    "lint-styles": "stylelint src/**/*.css",
+    "forestry:preview": "next -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "imagemin-svgo": "^7.1.0",
