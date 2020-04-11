@@ -1,10 +1,10 @@
 import React from "react";
 import Proptypes from "prop-types"
 
-import LogoSvg from "./logo.svg?sprite";
+import Sprite from "root/assets/logo.svg?sprite";
 
 const Logo = ({ width }) => (
-  <LogoSvg width={width} />
+  <Sprite width={width} />
 );
 
 Logo.propTypes = {
