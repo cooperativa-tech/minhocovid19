@@ -1,12 +1,17 @@
 import React from "react";
-import homeData from "cms/pages/index.json";
 import Layout from "root/components/Layout";
 import Circle from "root/assets/circle.svg?sprite";
 
+import content from "cms/pages/index.json";
+
 export default function HomePage() {
   return (
-    <Layout>
-      <h1>{homeData.title}</h1>
+    <Layout
+      title={content.title}
+      description={content.description}
+      keywords={content.keywords}
+    >
+      <h1>{content.title}</h1>
 
       <Circle />
     </Layout>

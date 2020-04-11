@@ -4,11 +4,13 @@ import Head from "next/head";
 
 import styles from "./index.module.css";
 
-function Layout({ children }) {
+function Layout({ title, description, keywords, children }) {
   return (
     <div className={styles.root}>
       <Head>
-        <title>MinhoCovid19</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        {keywords && <meta name="keywords" content={keywords} />}
       </Head>
 
       {children}
@@ -16,7 +18,14 @@ function Layout({ children }) {
   );
 }
 
+Layout.defaultProps = {
+  keywords: null,
+};
+
 Layout.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  keywords: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
