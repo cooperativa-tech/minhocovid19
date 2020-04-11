@@ -14,14 +14,16 @@ export const THEMES = {
 }
 
 const Button = ({ theme, href, children, onClick }) => {
+  const className = `${styles.root} ${theme}`;
+
   if (href) {
     return (
-      <a className={`${styles.root} ${theme}`} href={href}>{children}</a>
+      <a className={className} href={href}>{children}</a>
     );
   }
 
   return (
-    <button type="button" onClick={onClick} className={`${styles.root} ${theme}`}>
+    <button type="button" onClick={onClick} className={className}>
       {children}
     </button>
   );

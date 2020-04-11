@@ -52,8 +52,24 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     <BigText theme="greyishBlueTheme">
       Ligamos quem precisa de ajuda a quem pode ajudar.
     </BigText>
-    <Button theme={BUTTON_THEMES.RED}>Quero ajudar</Button>
-    <Button theme={BUTTON_THEMES.NEON_CARROT}>Preciso de ajuda</Button>
+    <Button theme={BUTTON_THEMES.RED} href="kitchensink">
+      Kitchen
+    </Button>
+    <Button theme={BUTTON_THEMES.NEON_CARROT} href="/">
+      Home
+    </Button>
+    <Button
+      theme={BUTTON_THEMES.RED}
+      onClick={() => alert("this is not cookie clicker -.-")}
+    >
+      Quero ajudar
+    </Button>
+    <Button
+      theme={BUTTON_THEMES.NEON_CARROT}
+      onClick={() => alert("this is not cookie clicker -.-")}
+    >
+      Preciso de ajuda
+    </Button>
   </Layout>
 );
 
