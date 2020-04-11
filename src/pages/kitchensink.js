@@ -7,6 +7,7 @@ import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title from "root/components/Title";
 import BigText from "root/components/BigText";
+import Button, { THEMES as BUTTON_THEMES } from "root/components/Button";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
@@ -51,6 +52,8 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     <BigText theme="greyishBlueTheme">
       Ligamos quem precisa de ajuda a quem pode ajudar.
     </BigText>
+    <Button theme={BUTTON_THEMES.RED}>Quero ajudar</Button>
+    <Button theme={BUTTON_THEMES.NEON_CARROT}>Preciso de ajuda</Button>
   </Layout>
 );
 
