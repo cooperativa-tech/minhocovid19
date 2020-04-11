@@ -7,6 +7,9 @@ sections:
 - type: document
   path: cms/pages/index.json
   label: Home Page
+- type: document
+  path: cms/pages/kitchensink.json
+  label: Kitchen Sink
 upload_dir: cms/assets
 public_path: "/assets"
 front_matter_path: ''
