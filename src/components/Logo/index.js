@@ -1,18 +1,16 @@
 import React from "react";
-import Proptypes from "prop-types"
+import Proptypes from "prop-types";
 
 import Sprite from "root/assets/logo.svg?sprite";
 
-const Logo = ({ width }) => (
-  <Sprite width={width} />
-);
+const Logo = ({ width }) => <Sprite width={width} />;
 
 Logo.propTypes = {
-  width: Proptypes.number
-}
+  width: Proptypes.number,
+};
 
 Logo.defaultProps = {
-  width: 140
-}
+  width: 140,
+};
 
 export default Logo;
