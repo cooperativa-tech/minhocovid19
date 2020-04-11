@@ -11,6 +11,7 @@
     "forestry:preview": "next -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
+    "airtable": "^0.8.1",
     "imagemin-svgo": "^7.1.0",
     "next": "^9.3.4",
     "next-optimized-images": "^2.5.7",

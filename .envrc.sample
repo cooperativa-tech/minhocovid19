@@ -1,1 +1,1 @@
-VARIABLE_EXAMPLE=example_value
+export AIRTABLE_API_KEY=api_key
