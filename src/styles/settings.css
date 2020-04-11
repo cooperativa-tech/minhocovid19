@@ -1,0 +1,26 @@
+$color-red: #de5959;
+$color-light-red: #fcece7;
+$color-sweet-brown: #ad3333;
+$color-neon-carrot: #f69f4e;
+$color-gold-yellow: #a16620;
+$color-cooper-red: #784848;
+$color-blue: #2690d8;
+$color-light-blue: #e5f1f9;
+$color-greyish-blue: #6189a4;
+$color-white: #ffffff;
+
+$size-8: 8px;
+$size-12: 12px;
+$size-16: 16px;
+$size-20: 20px;
+$size-28: 28px;
+$size-36: 36px;
+$size-48: 48px;
+$size-64: 64px;
+$size-84: 84px;
+$size-112: 112px;
+$size-148: 148px;
+
+$gutter: 24px;
+$cell-length: 65px;
+$grid-size: 1440px;
