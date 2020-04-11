@@ -10,7 +10,7 @@ export default function HomePage() {
     <Layout>
       <h1>{homeData.title}</h1>
 
-      <Circle />
+      <Circle width="100" height="100" />
     </Layout>
   );
 }
