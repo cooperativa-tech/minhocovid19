@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "root/components/Layout";
 
 import content from "cms/pages/kitchensink.json";
+import Logo from "../components/Logo";
 
 export default () => (
   <Layout
@@ -9,6 +10,6 @@ export default () => (
     description={content.description}
     keywords={content.keywords}
   >
-    Hello world
+    <Logo />
   </Layout>
 );
