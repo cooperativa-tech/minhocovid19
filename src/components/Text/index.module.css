@@ -1,0 +1,19 @@
+@import "../../styles/settings.css";
+
+.root {
+  font-family: "Gil Sans";
+  font-size: $size-20;
+  line-height: $size-28;
+}
+
+.redTheme {
+  color: $color-cooper-red;
+}
+
+.neonCarrotTheme {
+  color: $color-neon-carrot;
+}
+
+.greyishBlueTheme {
+  color: $color-greyish-blue;
+}
