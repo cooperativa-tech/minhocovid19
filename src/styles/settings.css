@@ -23,4 +23,21 @@ $size-148: 148px;
 
 $gutter: 24px;
 $cell-length: 65px;
-$grid-size: 1440px;
+$column-spacing: calc(2 * $gutter + $cell-length);
+$two-columns: calc(2 * $cell-length + $gutter);
+$three-columns: calc(3 * $cell-length + 2 * $gutter);
+$four-columns: calc(4 * $cell-length + 3 * $gutter);
+$five-columns: calc(5 * $cell-length + 4 * $gutter);
+$six-columns: calc(6 * $cell-length + 5 * $gutter);
+$seven-columns: calc(7 * $cell-length + 6 * $gutter);
+$eight-columns: calc(8 * $cell-length + 7 * $gutter);
+$nine-columns: calc(9 * $cell-length + 8 * $gutter);
+$ten-columns: calc(10 * $cell-length + 9 * $gutter);
+$eleven-columns: calc(11 * $cell-length + 10 * $gutter);
+$twelve-columns: calc(12 * $cell-length + 11 * $gutter);
+$thirteen-columns: calc(13 * $cell-length + 12 * $gutter);
+$fourteen-columns: calc(14 * $cell-length + 13 * $gutter);
+$fifteen-columns: calc(15 * $cell-length + 14 * $gutter);
+$sixteen-columns: calc(16 * $cell-length + 15 * $gutter);
+
+$content-width-desktop: $sixteen-columns;
