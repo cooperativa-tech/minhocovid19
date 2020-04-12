@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 import styles from "./index.module.css";
 
@@ -16,7 +17,7 @@ export const THEMES = {
 };
 
 const Subtitle = ({ children, theme }) => {
-  const className = `${styles.root} ${theme}`;
+  const className = classnames(styles.root, theme);
 
   return <h2 className={className}>{children}</h2>;
 };
