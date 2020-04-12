@@ -4,6 +4,7 @@ import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 
 import HousesSprite from "root/assets/houses.svg?sprite";
+import HumanSprite from "root/assets/human.svg?sprite";
 
 import styles from "./index.module.css";
 
@@ -17,6 +18,8 @@ export default function HomeHero() {
         <Subtitle theme={SUBTITLE_THEMES.RED}>
           Ligamos quem precisa de ajuda a quem pode ajudar
         </Subtitle>
+
+        <HumanSprite className={styles.human} />
       </div>
 
       <HousesSprite className={styles.houses} />

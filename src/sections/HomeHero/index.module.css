@@ -1,6 +1,8 @@
 @import "../../styles/settings.css";
 
 .root {
+  position: relative;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,6 +15,15 @@
 
 .copy > * + * {
   margin-top: $size-20;
+}
+
+.human {
+  position: absolute;
+  bottom: 0;
+
+  width: $three-columns;
+
+  transform: translateY(50%);
 }
 
 .houses {
