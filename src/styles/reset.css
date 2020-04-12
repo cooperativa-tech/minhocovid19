@@ -4,6 +4,23 @@ html {
 
 * {
   box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
   padding: 0;
   margin: 0;
 }

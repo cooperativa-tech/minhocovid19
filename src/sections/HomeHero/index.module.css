@@ -1,0 +1,20 @@
+@import "../../styles/settings.css";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $size-64 $column $size-196 $column;
+
+  background: linear-gradient(94.99deg, #f9f1e5 13.96%, #f9f1e5 90.87%);
+  border-radius: 128px;
+}
+
+.copy > * + * {
+  margin-top: $size-20;
+}
+
+.houses {
+  width: calc($five-columns + $gutter);
+}

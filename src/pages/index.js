@@ -1,7 +1,8 @@
 import React from "react";
 
 import Layout from "root/components/Layout";
-import Circle from "root/assets/circle.svg?sprite";
+import HomeHero from "root/sections/HomeHero";
+
 import content from "cms/pages/index.json";
 
 export default function HomePage() {
@@ -11,8 +12,7 @@ export default function HomePage() {
       description={content.description}
       keywords={content.keywords}
     >
-      <h1>{content.title}</h1>
-      <Circle width="100" height="100" />
+      <HomeHero />
     </Layout>
   );
 }
