@@ -7,7 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: $size-64 $column $size-196 $column;
+  padding: $size-148 $column $size-294 $column;
 
   background: linear-gradient(94.99deg, #f9f1e5 13.96%, #f9f1e5 90.87%);
   border-radius: 128px;
@@ -17,15 +17,10 @@
   margin-top: $size-20;
 }
 
-.human {
+.foreground {
   position: absolute;
-  bottom: 0;
+  top: 15%;
 
-  width: $three-columns;
-
-  transform: translateY(50%);
-}
-
-.houses {
-  width: calc($five-columns + $gutter);
+  width: calc(100% - $column);
+  padding-right: $column;
 }
