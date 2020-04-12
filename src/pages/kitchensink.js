@@ -1,14 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Layout from "root/components/Layout";
 import Logo from "root/components/Logo";
 import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title from "root/components/Title";
+import getTotalDonations from "root/lib/getTotalDonations";
+import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
 import content from "cms/pages/kitchensink.json";
 
-export default () => (
+const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
   <Layout
     title={content.title}
     description={content.description}
@@ -35,5 +38,24 @@ export default () => (
     <Subtitle theme={SUBTITLE_THEMES.RED}>
       Badjeros Badjorans? Bodjarens.
     </Subtitle>
+
+    <Text>Total donations: {totalDonations}</Text>
+    <Text>Delivered material: {deliveredMaterial}</Text>
   </Layout>
 );
+
+KitchenSink.propTypes = {
+  totalDonations: PropTypes.number.isRequired,
+  deliveredMaterial: PropTypes.number.isRequired,
+};
+
+export async function getStaticProps(_context) {
+  return {
+    props: {
+      totalDonations: await getTotalDonations(),
+      deliveredMaterial: await getDeliveredMaterial(),
+    },
+  };
+}
+
+export default KitchenSink;

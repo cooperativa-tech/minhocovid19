@@ -1,4 +1,5 @@
 import React from "react";
+
 import Layout from "root/components/Layout";
 import Circle from "root/assets/circle.svg?sprite";
 import content from "cms/pages/index.json";
