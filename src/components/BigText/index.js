@@ -4,22 +4,22 @@ import classnames from "classnames";
 
 import styles from "./index.module.css";
 
-const Description = ({ children, theme, variant }) => {
+const BigText = ({ children, theme, variant }) => {
   const colorThemes = classnames(styles[theme]);
   const Element = variant;
 
   return <Element className={colorThemes}>{children}</Element>;
 };
 
-Description.defaultProps = {
+BigText.defaultProps = {
   theme: "redTheme",
   variant: "h3",
 };
 
-Description.propTypes = {
+BigText.propTypes = {
   children: PropTypes.node.isRequired,
   theme: PropTypes.oneOf(["redTheme", "neonCarrotTheme", "greyishBlueTheme"]),
   variant: PropTypes.string,
 };
 
-export default Description;
+export default BigText;
