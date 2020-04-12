@@ -3,6 +3,7 @@ module.exports = {
     "postcss-import",
     "postcss-nested",
     "postcss-flexbugs-fixes",
+    "postcss-simple-vars",
     [
       "postcss-preset-env",
       {

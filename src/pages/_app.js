@@ -1,10 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Head from "next/head";
 
 import "root/styles/base.css";
 
 function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 /* eslint-disable react/forbid-prop-types */
