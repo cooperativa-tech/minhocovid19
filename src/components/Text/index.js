@@ -18,7 +18,7 @@ export const THEMES = {
 const Text = ({ children, theme }) => {
   const className = `${styles.root} ${theme}`;
 
-  return <div className={className}>{children}</div>;
+  return <p className={className}>{children}</p>;
 };
 
 Text.propTypes = {

@@ -1,1 +1,11 @@
 /** Place element resets as needed on this file */
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
