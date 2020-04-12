@@ -6,6 +6,7 @@ import Logo from "root/components/Logo";
 import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title from "root/components/Title";
+import Description from "root/components/Description";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
@@ -41,6 +42,13 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
 
     <Text>Total donations: {totalDonations}</Text>
     <Text>Delivered material: {deliveredMaterial}</Text>
+    <Description theme="redTheme">
+      Ligamos quem precisa de ajuda a quem pode ajudar.
+    </Description>
+    <Description theme="neonCarrotTheme">
+      Ligamos quem precisa de ajuda a quem pode ajudar.
+    </Description>
+    <Description theme="greyishBlueTheme" />
   </Layout>
 );
 
