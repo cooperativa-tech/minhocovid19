@@ -17,7 +17,7 @@ export const THEMES = {
 };
 
 const Text = ({ children, theme }) => {
-  const className = classnames(styles.root, styles[theme]);
+  const className = classnames(styles.root, theme);
 
   return <p className={className}>{children}</p>;
 };
