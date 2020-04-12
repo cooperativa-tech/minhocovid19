@@ -1,0 +1,29 @@
+@import "../../styles/settings.css";
+
+.root {
+  position: fixed;
+  width: 100%;
+  height: $size-148;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: $color-quarter-pearl-lusta;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: $size-20;
+  line-height: $size-26;
+}
+
+.logo {
+  position: relative;
+  top: $size-64;
+  left: $size-84;
+}
+
+.link {
+  padding-right: $column;
+}

@@ -1,0 +1,28 @@
+@import "../../styles/settings.css";
+
+.root {
+  position: relative;
+
+  color: $color-cooper-red;
+  font-size: $size-20;
+  line-height: $size-26;
+  text-decoration: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: -$size-8;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: $color-cooper-red;
+
+  transform: translateY(0px);
+
+  transition: transform 0.3s ease-in;
+}
+
+.root:hover .underline {
+  transform: translateY(-$size-8);
+}
