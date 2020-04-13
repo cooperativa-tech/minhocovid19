@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import Layout from "root/components/Layout";
 import Logo from "root/components/Logo";
+import Stats from "root/components/Stats";
 import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
@@ -41,12 +42,12 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     <Subtitle theme={SUBTITLE_THEMES.RED}>
       Badjeros Badjorans? Bodjarens.
     </Subtitle>
-    <Text theme={TEXT_THEMES.GREISH_BLUE}>
-      Total donations: {totalDonations}
-    </Text>
-    <Text theme={TEXT_THEMES.GREISH_BLUE}>
-      Delivered material: {deliveredMaterial}
-    </Text>
+    <Stats
+      list={[
+        { label: "Total donations", value: totalDonations },
+        { label: "Delivered material", value: deliveredMaterial },
+      ]}
+    />
     <BigText theme="redTheme">
       Ligamos quem precisa de ajuda a quem pode ajudar.
     </BigText>
