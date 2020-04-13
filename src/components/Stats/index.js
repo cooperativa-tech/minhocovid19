@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 import styles from "./index.module.css";
 
-// eslint-disable-next-line react/prop-types
 const renderItem = (item) => {
   const { label, value } = item;
 
