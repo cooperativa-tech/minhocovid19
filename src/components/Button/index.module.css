@@ -1,13 +1,15 @@
+@import "../../styles/settings.css";
+
 .root {
   display: inline-block;
 
-  padding: 20px 32px;
-  border-radius: 24px;
+  padding: $size-20 $size-36;
+  border-radius: $size-26;
 
   border: none;
 
-  font-size: 32px;
-  line-height: 48px;
+  font-size: $size-36;
+  line-height: $size-48;
   font-family: "Gil Sans";
   text-decoration: none;
 
@@ -15,13 +17,13 @@
 }
 
 .redTheme {
-  background: #DE5959;
+  background: $color-red;
 
-  color: #ffffff;
+  color: $color-white;
 }
 
 .neonCarrotTheme {
-  background: #F79F4E;
+  background: $color-neon-carrot;
 
-  color: #ffffff;
+  color: $color-white;
 }
