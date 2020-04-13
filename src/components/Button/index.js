@@ -17,7 +17,7 @@ const Button = ({ theme, href, children, onClick }) => {
   if (href) {
     return (
       <NextLink href={href}>
-        {/* eslint-disable-next-line */}
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a className={className}>{children}</a>
       </NextLink>
     );
