@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 
 import styles from "./index.module.css";
 
+import Text, { THEMES } from "../Text";
+
 const renderItem = (item) => {
   const { label, value } = item;
 
   return (
     <li className={styles.item}>
-      <p className={styles.label}>{label}</p>
+      <Text theme={THEMES.GREISH_BLUE}>{label}</Text>
       <p className={styles.value}>{value}</p>
     </li>
   );

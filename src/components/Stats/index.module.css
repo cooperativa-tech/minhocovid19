@@ -10,12 +10,6 @@
   border-bottom: 1px solid $color-blue;
 }
 
-.label {
-  color: $color-greyish-blue;
-  font-size: $size-20;
-  line-height: $size-26;
-}
-
 .value {
   color: $color-blue;
   font-size: $size-36;
