@@ -8,6 +8,7 @@ import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
 import BigText from "root/components/BigText";
 import Button, { THEMES as BUTTON_THEMES } from "root/components/Button";
+import Link from "root/components/Link";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
@@ -73,6 +74,7 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     >
       Preciso de ajuda
     </Button>
+    <Link href="/">Ver todas as doações do MinhoCovid19</Link>
   </Layout>
 );
 

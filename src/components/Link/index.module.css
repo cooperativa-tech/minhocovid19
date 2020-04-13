@@ -1,0 +1,28 @@
+@import "../../styles/settings.css";
+
+.root {
+  position: relative;
+
+  color: $color-blue;
+  font-size: $size-26;
+  line-height: $size-36;
+  text-decoration: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: -$size-12;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: $color-blue;
+
+  transform: translateY(0px);
+
+  transition: transform 0.3s ease-in;
+}
+
+.root:hover .underline {
+  transform: translateY(-$size-8);
+}

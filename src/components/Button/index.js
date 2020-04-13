@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import NextLink from "next/link";
 
 import styles from "./index.module.css";
 
@@ -15,9 +16,10 @@ const Button = ({ theme, href, children, onClick }) => {
 
   if (href) {
     return (
-      <a className={className} href={href}>
-        {children}
-      </a>
+      <NextLink href={href}>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a className={className}>{children}</a>
+      </NextLink>
     );
   }
 
