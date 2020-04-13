@@ -1,0 +1,26 @@
+@import "../../styles/settings.css";
+
+.root {
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: $size-26 0;
+
+  border-bottom: 1px solid $color-blue;
+}
+
+.label {
+  color: $color-greyish-blue;
+  font-size: $size-20;
+  line-height: $size-26;
+}
+
+.value {
+  color: $color-blue;
+  font-size: $size-36;
+  line-height: $size-48;
+}
