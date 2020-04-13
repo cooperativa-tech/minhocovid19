@@ -14,9 +14,12 @@ export default function HomeHero() {
         <Title variant="h1" theme={TITLE_THEMES.NEON_CARROT}>
           Juntos paramos o Covid19
         </Title>
-        <Subtitle theme={SUBTITLE_THEMES.RED}>
-          Ligamos quem precisa de ajuda a quem pode ajudar
-        </Subtitle>
+
+        <div className={styles.subtitle}>
+          <Subtitle theme={SUBTITLE_THEMES.RED}>
+            Ligamos quem precisa de ajuda a quem pode ajudar
+          </Subtitle>
+        </div>
       </div>
 
       <div className={styles.foreground}>

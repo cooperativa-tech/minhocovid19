@@ -6,6 +6,7 @@ import Logo from "root/components/Logo";
 import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
+import BigText from "root/components/BigText";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
@@ -38,13 +39,21 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     <Subtitle theme={SUBTITLE_THEMES.RED}>
       Badjeros Badjorans? Bodjarens.
     </Subtitle>
-
     <Text theme={TEXT_THEMES.GREISH_BLUE}>
       Total donations: {totalDonations}
     </Text>
     <Text theme={TEXT_THEMES.GREISH_BLUE}>
       Delivered material: {deliveredMaterial}
     </Text>
+    <BigText theme="redTheme">
+      Ligamos quem precisa de ajuda a quem pode ajudar.
+    </BigText>
+    <BigText theme="neonCarrotTheme">
+      Ligamos quem precisa de ajuda a quem pode ajudar.
+    </BigText>
+    <BigText theme="greyishBlueTheme">
+      Ligamos quem precisa de ajuda a quem pode ajudar.
+    </BigText>
   </Layout>
 );
 
