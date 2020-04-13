@@ -4,14 +4,20 @@ import PropTypes from "prop-types";
 import styles from "./index.module.css";
 
 // eslint-disable-next-line react/prop-types
-const render = ({ label, value }) => (
-  <li className={styles.item}>
-    <p className={styles.label}>{label}</p>
-    <p className={styles.value}>{value}</p>
-  </li>
-);
+const renderItem = (item) => {
+  const { label, value } = item;
 
-const Stats = ({ list }) => <ul className={styles.root}>{list.map(render)}</ul>;
+  return (
+    <li className={styles.item}>
+      <p className={styles.label}>{label}</p>
+      <p className={styles.value}>{value}</p>
+    </li>
+  );
+};
+
+const Stats = ({ list }) => (
+  <ul className={styles.root}>{list.map(renderItem)}</ul>
+);
 
 Stats.propTypes = {
   list: PropTypes.arrayOf(
