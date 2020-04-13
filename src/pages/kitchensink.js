@@ -5,7 +5,7 @@ import Layout from "root/components/Layout";
 import Logo from "root/components/Logo";
 import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
-import Title from "root/components/Title";
+import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
@@ -17,9 +17,9 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     description={content.description}
     keywords={content.keywords}
   >
-    <Title theme="redTheme">Juntos paramos o Covid19</Title>
-    <Title theme="neonCarrotTheme">Juntos paramos o Covid19</Title>
-    <Title theme="greyishBlueTheme">Juntos paramos o Covid19</Title>
+    <Title theme={TITLE_THEMES.RED}>Juntos paramos o Covid19</Title>
+    <Title theme={TITLE_THEMES.NEON_CARROT}>Juntos paramos o Covid19</Title>
+    <Title theme={TITLE_THEMES.GREISH_BLUE}>Juntos paramos o Covid19</Title>
     <Logo />
     <Text theme={TEXT_THEMES.RED}>
       Aceitamos doações de material para construir viseiras, material de
@@ -39,8 +39,12 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
       Badjeros Badjorans? Bodjarens.
     </Subtitle>
 
-    <Text>Total donations: {totalDonations}</Text>
-    <Text>Delivered material: {deliveredMaterial}</Text>
+    <Text theme={TEXT_THEMES.GREISH_BLUE}>
+      Total donations: {totalDonations}
+    </Text>
+    <Text theme={TEXT_THEMES.GREISH_BLUE}>
+      Delivered material: {deliveredMaterial}
+    </Text>
   </Layout>
 );
 
