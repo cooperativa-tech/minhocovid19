@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Layout from "root/components/Layout";
 import Logo from "root/components/Logo";
 import Stats from "root/components/Stats";
+import Section from "root/components/Section";
 import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
 import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
 import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
@@ -76,6 +77,33 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
       Preciso de ajuda
     </Button>
     <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    <Section theme="lightBlue">
+      <Button
+        theme={BUTTON_THEMES.NEON_CARROT}
+        onClick={() => alert("this is not cookie clicker -.-")}
+      >
+        Preciso de ajuda
+      </Button>
+      <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    </Section>
+    <Section theme="lightRed">
+      <Button
+        theme={BUTTON_THEMES.NEON_CARROT}
+        onClick={() => alert("this is not cookie clicker -.-")}
+      >
+        Preciso de ajuda
+      </Button>
+      <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    </Section>
+    <Section theme="linen">
+      <Button
+        theme={BUTTON_THEMES.NEON_CARROT}
+        onClick={() => alert("this is not cookie clicker -.-")}
+      >
+        Preciso de ajuda
+      </Button>
+      <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    </Section>
   </Layout>
 );
 

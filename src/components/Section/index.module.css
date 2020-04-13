@@ -1,0 +1,19 @@
+@import "../../styles/settings.css";
+
+.root {
+  padding: $size-64;
+
+  border-radius: $size-48;
+}
+
+.lightBlue {
+  background-color: $color-light-blue;
+}
+
+.lightRed {
+  background-color: $color-light-red;
+}
+
+.linen {
+  background-color: $color-linen;
+}
