@@ -22,6 +22,12 @@ After that, just run `bin/server` and go for it!
 
 A friendly reminder that we have `eslint` and `stylelint` set up for linting and styling both Javascript and CSS code respectively. Please, be respectful of them :)
 
+### CMS
+
+All of our text is present on the file based CMS (powered by Forestry). All of the files are in the `cms` directory. Access them as you would access regular files from any Javascript based app.
+
+For now, every piece of content (text, descriptions, meta stuff) is there, so non technical people can edit it as they see fit.
+
 ## Testing
 
 We don't have testing for this website, but we run static analysis on our code, as we mentioned already. Just do it with `bin/lint`.
