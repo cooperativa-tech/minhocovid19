@@ -1,22 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import classnames from "classnames";
 
+import Themes from "../Themes";
 import styles from "./index.module.css";
 
 const BigText = ({ children, theme }) => {
-  const colorThemes = classnames(styles[theme]);
-
-  return <p className={colorThemes}>{children}</p>;
+  return <p className={`${styles.root} ${styles[theme]}`}>{children}</p>;
 };
 
 BigText.defaultProps = {
-  theme: "redTheme",
+  theme: Themes.red,
 };
 
 BigText.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf(["redTheme", "neonCarrotTheme", "greyishBlueTheme"]),
+  theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot, Themes.greyishBlue]),
 };
 
 export default BigText;

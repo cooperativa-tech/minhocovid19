@@ -1,14 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Themes from "root/components/Themes";
 import Layout from "root/components/Layout";
 import Logo from "root/components/Logo";
 import Stats from "root/components/Stats";
-import Text, { THEMES as TEXT_THEMES } from "root/components/Text";
-import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
-import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
+import Section from "root/components/Section";
+import Text from "root/components/Text";
+import Subtitle from "root/components/Subtitle";
+import Title from "root/components/Title";
 import BigText from "root/components/BigText";
-import Button, { THEMES as BUTTON_THEMES } from "root/components/Button";
+import Button from "root/components/Button";
 import Link from "root/components/Link";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
@@ -21,27 +23,25 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     description={content.description}
     keywords={content.keywords}
   >
-    <Title theme={TITLE_THEMES.RED}>Juntos paramos o Covid19</Title>
-    <Title theme={TITLE_THEMES.NEON_CARROT}>Juntos paramos o Covid19</Title>
-    <Title theme={TITLE_THEMES.GREISH_BLUE}>Juntos paramos o Covid19</Title>
+    <Title theme={Themes.red}>Juntos paramos o Covid19</Title>
+    <Title theme={Themes.neonCarrot}>Juntos paramos o Covid19</Title>
+    <Title theme={Themes.greyishBlue}>Juntos paramos o Covid19</Title>
     <Logo />
-    <Text theme={TEXT_THEMES.RED}>
+    <Text theme={Themes.red}>
       Aceitamos doações de material para construir viseiras, material de
       higiene, produtos alimentares ou dinheiro
     </Text>
-    <Text theme={TEXT_THEMES.NEON_CARROT}>
+    <Text theme={Themes.neonCarrot}>
       Aceitamos doações de material para construir viseiras, material de
       higiene, produtos alimentares ou dinheiro
     </Text>
-    <Text theme={TEXT_THEMES.GREISH_BLUE}>
+    <Text theme={Themes.greyishBlue}>
       Aceitamos doações de material para construir viseiras, material de
       higiene, produtos alimentares ou dinheiro
     </Text>
-    <Subtitle theme={SUBTITLE_THEMES.GREISH_BLUE}>Precisa de Ajuda?</Subtitle>
-    <Subtitle theme={SUBTITLE_THEMES.NEON_CARROT}>Como ajudar?</Subtitle>
-    <Subtitle theme={SUBTITLE_THEMES.RED}>
-      Badjeros Badjorans? Bodjarens.
-    </Subtitle>
+    <Subtitle theme={Themes.greyishBlue}>Precisa de Ajuda?</Subtitle>
+    <Subtitle theme={Themes.neonCarrot}>Como ajudar?</Subtitle>
+    <Subtitle theme={Themes.red}>Badjeros Badjorans? Bodjarens.</Subtitle>
     <Stats
       list={[
         { label: "Total donations", value: totalDonations },
@@ -57,25 +57,52 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
     <BigText theme="greyishBlueTheme">
       Ligamos quem precisa de ajuda a quem pode ajudar.
     </BigText>
-    <Button theme={BUTTON_THEMES.RED} href="kitchensink">
+    <Button theme={Themes.red} href="kitchensink">
       Kitchen
     </Button>
-    <Button theme={BUTTON_THEMES.NEON_CARROT} href="/">
+    <Button theme={Themes.neonCarrot} href="/">
       Home
     </Button>
     <Button
-      theme={BUTTON_THEMES.RED}
+      theme={Themes.red}
       onClick={() => alert("this is not cookie clicker -.-")}
     >
       Quero ajudar
     </Button>
     <Button
-      theme={BUTTON_THEMES.NEON_CARROT}
+      theme={Themes.neonCarrot}
       onClick={() => alert("this is not cookie clicker -.-")}
     >
       Preciso de ajuda
     </Button>
     <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    <Section theme={Themes.lightBlue}>
+      <Button
+        theme={Themes.neonCarrot}
+        onClick={() => alert("this is not cookie clicker -.-")}
+      >
+        Preciso de ajuda
+      </Button>
+      <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    </Section>
+    <Section theme={Themes.lightRed}>
+      <Button
+        theme={Themes.neonCarrot}
+        onClick={() => alert("this is not cookie clicker -.-")}
+      >
+        Preciso de ajuda
+      </Button>
+      <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    </Section>
+    <Section theme={Themes.linen}>
+      <Button
+        theme={Themes.neonCarrot}
+        onClick={() => alert("this is not cookie clicker -.-")}
+      >
+        Preciso de ajuda
+      </Button>
+      <Link href="/">Ver todas as doações do MinhoCovid19</Link>
+    </Section>
   </Layout>
 );
 

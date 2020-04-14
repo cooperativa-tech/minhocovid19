@@ -1,7 +1,8 @@
 import React from "react";
 
-import Title, { THEMES as TITLE_THEMES } from "root/components/Title";
-import Subtitle, { THEMES as SUBTITLE_THEMES } from "root/components/Subtitle";
+import Themes from "root/components/Themes";
+import Title from "root/components/Title";
+import Subtitle from "root/components/Subtitle";
 
 import HeroSvg from "root/assets/hero.svg?sprite";
 
@@ -11,12 +12,12 @@ export default function HomeHero() {
   return (
     <section className={styles.root}>
       <div className={styles.copy}>
-        <Title variant="h1" theme={TITLE_THEMES.NEON_CARROT}>
+        <Title variant="h1" theme={Themes.neonCarrot}>
           Juntos paramos o Covid19
         </Title>
 
         <div className={styles.subtitle}>
-          <Subtitle theme={SUBTITLE_THEMES.RED}>
+          <Subtitle theme={Themes.red}>
             Ligamos quem precisa de ajuda a quem pode ajudar
           </Subtitle>
         </div>

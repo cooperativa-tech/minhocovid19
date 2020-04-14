@@ -2,17 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import NextLink from "next/link";
 
+import Themes from "../Themes";
 import styles from "./index.module.css";
 
-const THEMES_VALUES = [styles.redTheme, styles.neonCarrotTheme];
-
-export const THEMES = {
-  RED: THEMES_VALUES[0],
-  NEON_CARROT: THEMES_VALUES[1],
-};
-
 const Button = ({ theme, href, children, onClick }) => {
-  const className = `${styles.root} ${theme}`;
+  const className = `${styles.root} ${styles[theme]}`;
 
   if (href) {
     return (
@@ -34,7 +28,7 @@ Button.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf(THEMES_VALUES).isRequired,
+  theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot]).isRequired,
 };
 
 Button.defaultProps = {
