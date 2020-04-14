@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Themes from "../Themes";
 import styles from "./index.module.css";
 
 const Section = ({ children, theme }) => (
@@ -8,7 +9,8 @@ const Section = ({ children, theme }) => (
 );
 
 Section.propTypes = {
-  theme: PropTypes.string.isRequired,
+  theme: PropTypes.oneOf([Themes.lightBlue, Themes.lightRed, Themes.linen])
+    .isRequired,
   children: PropTypes.node.isRequired,
 };
 

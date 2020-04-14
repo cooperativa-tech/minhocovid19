@@ -6,14 +6,14 @@
   border-radius: $size-48;
 }
 
-.lightBlue {
+.lightBlueTheme {
   background-color: $color-light-blue;
 }
 
-.lightRed {
+.lightRedTheme {
   background-color: $color-light-red;
 }
 
-.linen {
+.linenTheme {
   background-color: $color-linen;
 }
