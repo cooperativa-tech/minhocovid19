@@ -8,25 +8,27 @@ import styles from "./index.module.css";
 
 const Navbar = () => {
   return (
-    <header className={styles.root}>
+    <div className={styles.root}>
       <div className={styles.logo}>
         <Logo />
       </div>
       <nav className={styles.nav}>
-        <div className={styles.link}>
-          <NavLink href="/">Sobre Nós</NavLink>
-        </div>
-        <div className={styles.link}>
-          <NavLink href="/">Perguntas Frequentes</NavLink>
-        </div>
-        <div className={styles.link}>
-          <NavLink href="/">Relatório de Transparência</NavLink>
-        </div>
-        <div className={styles.link}>
-          <NavButton href="/">Quero ajudar</NavButton>
-        </div>
+        <ul>
+          <li className={styles.link}>
+            <NavLink href="/">Sobre Nós</NavLink>
+          </li>
+          <li className={styles.link}>
+            <NavLink href="/">Perguntas Frequentes</NavLink>
+          </li>
+          <li className={styles.link}>
+            <NavLink href="/">Relatório de Transparência</NavLink>
+          </li>
+          <li className={styles.link}>
+            <NavButton href="/">Quero ajudar</NavButton>
+          </li>
+        </ul>
       </nav>
-    </header>
+    </div>
   );
 };
 
