@@ -2,6 +2,6 @@
 
 .root {
   max-width: $content-width-desktop;
-  padding: 0 $gutter;
+  padding: $size-148 $gutter 0 $gutter;
   margin: 0 auto;
 }
