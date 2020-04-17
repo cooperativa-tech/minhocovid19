@@ -1,0 +1,16 @@
+@import "../styles/settings.css";
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.callToAction {
+  max-width: $seven-columns;
+  margin-top: $size-136;
+}
+
+.stats {
+  max-width: $eight-columns;
+}

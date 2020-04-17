@@ -23,6 +23,7 @@ Title.propTypes = {
     Themes.neonCarrot,
     Themes.greyishBlue,
     Themes.red,
+    Themes.sweetBrown,
   ]).isRequired,
   variant: PropTypes.string,
 };

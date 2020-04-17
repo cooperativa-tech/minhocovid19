@@ -4,11 +4,14 @@ import PropTypes from "prop-types";
 import HomeHero from "root/sections/HomeHero";
 import Layout from "root/components/Layout";
 import Navbar from "root/components/Navbar";
+import HomeCallToAction from "root/sections/HomeCallToAction";
 import HomeStats from "root/sections/HomeStats";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
 
 import content from "cms/pages/index.json";
+
+import styles from "./index.module.css";
 
 export default function HomePage({ totalDonations, deliveredMaterial }) {
   return (
@@ -20,10 +23,19 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
         keywords={content.keywords}
       >
         <HomeHero />
-        <HomeStats
-          totalDonations={totalDonations}
-          deliveredMaterial={deliveredMaterial}
-        />
+
+        <div className={styles.sections}>
+          <div className={styles.callToAction}>
+            <HomeCallToAction />
+          </div>
+
+          <div className={styles.stats}>
+            <HomeStats
+              totalDonations={totalDonations}
+              deliveredMaterial={deliveredMaterial}
+            />
+          </div>
+        </div>
       </Layout>
     </>
   );
