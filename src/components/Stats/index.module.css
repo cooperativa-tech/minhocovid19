@@ -12,6 +12,7 @@
 
 .value {
   color: $color-blue;
-  font-size: $size-36;
+
+  font-size: $size-32;
   line-height: $size-48;
 }

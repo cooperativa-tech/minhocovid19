@@ -10,7 +10,7 @@ const renderItem = (item) => {
   const { label, value } = item;
 
   return (
-    <li className={styles.item}>
+    <li className={styles.item} key={label}>
       <Text theme={Themes.greyishBlue}>{label}</Text>
       <p className={styles.value}>{value}</p>
     </li>

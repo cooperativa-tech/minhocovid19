@@ -1,0 +1,14 @@
+@import "../../styles/settings.css";
+
+.root {
+  width: $eight-columns;
+}
+
+.description {
+  margin-top: $size-20;
+  margin-bottom: $size-48;
+}
+
+.link {
+  margin-top: $size-64;
+}
