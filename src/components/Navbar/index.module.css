@@ -1,30 +1,35 @@
 @import "../../styles/settings.css";
 
 .root {
-  position: fixed;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: $size-148;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  background-color: $color-quarter-pearl-lusta;
+  padding: 0 $column;
 }
 
-.nav {
+.links {
   display: flex;
   align-items: center;
+  margin-left: auto;
+
   font-size: $size-20;
   line-height: $size-26;
 }
 
 .logo {
-  position: relative;
+  position: absolute;
   top: $size-64;
-  left: $size-84;
+  z-index: 1;
 }
 
 .link {
   display: inline-block;
-  padding-right: $column;
+}
+
+.link:not(:last-child) {
+  margin-right: $column;
 }

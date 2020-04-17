@@ -1,7 +1,7 @@
 @import "../../styles/settings.css";
 
 .root {
-  max-width: $content-width-desktop;
-  padding: $size-148 $gutter 0 $gutter;
+  max-width: calc($content-width-desktop + (2 * $gutter));
+  padding: 0 $gutter;
   margin: 0 auto;
 }
