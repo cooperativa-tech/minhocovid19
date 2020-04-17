@@ -4,15 +4,15 @@
   display: inline-block;
 
   padding: $size-26 $size-36;
-  border-radius: $size-26;
 
   border: none;
+  border-radius: $size-26;
+
+  cursor: pointer;
 
   font-size: $size-26;
   line-height: $size-36;
   text-decoration: none;
-
-  cursor: pointer;
 }
 
 .redTheme {

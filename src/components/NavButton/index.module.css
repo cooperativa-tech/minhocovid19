@@ -4,15 +4,15 @@
   display: inline-block;
 
   padding: $size-16 $size-36;
-  border-radius: $size-26;
 
   border: 1px solid $color-red;
+  border-radius: $size-26;
+
+  cursor: pointer;
 
   font-size: $size-20;
   line-height: $size-26;
   text-decoration: none;
-
-  cursor: pointer;
 }
 
 .text {
