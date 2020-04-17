@@ -4,19 +4,28 @@ import NextLink from "next/link";
 
 import styles from "./index.module.css";
 
-const Link = ({ href, children }) => (
-  <NextLink href={href}>
-    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-    <a className={styles.root}>
-      {children}
-      <span className={styles.underline} />
-    </a>
-  </NextLink>
+const renderInnerAnchor = (href, children) => (
+  <a href={href} className={styles.root}>
+    {children}
+    <span className={styles.underline} />
+  </a>
 );
+
+const Link = ({ href, children, external }) =>
+  external ? (
+    renderInnerAnchor(href, children)
+  ) : (
+    <NextLink href={href}>{renderInnerAnchor(href, children)}</NextLink>
+  );
+
+Link.defaultProps = {
+  external: false,
+};
 
 Link.propTypes = {
   href: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  external: PropTypes.bool,
 };
 
 export default Link;

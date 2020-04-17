@@ -5,6 +5,10 @@
   line-height: $size-48;
 }
 
+.blueTheme {
+  color: $color-blue;
+}
+
 .redTheme {
   color: $color-cooper-red;
 }
