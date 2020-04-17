@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Section from "root/components/Section";
-import Themes from "root/components/Themes";
-import Stats from "root/components/Stats";
-import Title from "root/components/Title";
 import BigText from "root/components/BigText";
 import Link from "root/components/Link";
+import Themes from "root/components/Themes";
+import Title from "root/components/Title";
+import Section from "root/components/Section";
+import Stats from "root/components/Stats";
 
 import styles from "./index.module.css";
 

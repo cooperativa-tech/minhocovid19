@@ -19,10 +19,10 @@ Title.defaultProps = {
 Title.propTypes = {
   children: PropTypes.node.isRequired,
   theme: PropTypes.oneOf([
-    Themes.red,
     Themes.blue,
     Themes.neonCarrot,
     Themes.greyishBlue,
+    Themes.red,
   ]).isRequired,
   variant: PropTypes.string,
 };
