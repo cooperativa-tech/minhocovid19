@@ -14,7 +14,12 @@ BigText.defaultProps = {
 
 BigText.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot, Themes.greyishBlue]),
+  theme: PropTypes.oneOf([
+    Themes.red,
+    Themes.neonCarrot,
+    Themes.greyishBlue,
+    Themes.goldYellow,
+  ]),
 };
 
 export default BigText;
