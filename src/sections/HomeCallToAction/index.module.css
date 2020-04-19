@@ -1,10 +1,15 @@
 @import "../../styles/settings.css";
 
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
 .description {
   margin-top: $size-20;
   margin-bottom: $size-48;
 }
 
-.link {
+.needHelpSection {
   margin-top: $size-64;
 }
