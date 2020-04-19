@@ -1,4 +1,8 @@
+@import "./settings.css";
+
 html {
+  background-color: $color-quarter-pearl-lusta;
+
   font-family: "Open Sans", sans-serif;
 }
 

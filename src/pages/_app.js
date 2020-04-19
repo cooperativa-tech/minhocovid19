@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 
-import "root/styles/base.css";
+import "normalize.css";
+import "root/styles/reset.css";
 
 function App({ Component, pageProps }) {
   return (
