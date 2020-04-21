@@ -15,6 +15,9 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head />
         <body>
+          {/** Avoid FOUC with this hack on firefox */}
+          <script>0</script>
+
           <Main />
           <NextScript />
         </body>

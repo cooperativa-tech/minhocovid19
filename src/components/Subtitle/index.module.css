@@ -1,8 +1,8 @@
 @import "../../styles/settings.css";
 
 .root {
-  font-size: $size-20;
-  line-height: $size-26;
+  font-size: $size-26;
+  line-height: $size-36;
 }
 
 .redTheme {
