@@ -1,16 +1,17 @@
 import React from "react";
 import Proptypes from "prop-types";
 
-import Sprite from "root/assets/logo.svg?sprite";
+import logoSvg from "root/assets/logo.svg?include";
+import SvgIncluder from "root/components/SvgIncluder";
 
-const Logo = ({ width }) => <Sprite width={width} />;
+const Logo = ({ width }) => <SvgIncluder width={width} svg={logoSvg} />;
 
 Logo.propTypes = {
-  width: Proptypes.number,
+  width: Proptypes.string,
 };
 
 Logo.defaultProps = {
-  width: 140,
+  width: "140px",
 };
 
 export default Logo;

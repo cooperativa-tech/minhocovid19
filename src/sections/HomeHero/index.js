@@ -1,10 +1,10 @@
 import React from "react";
 
+import heroSvg from "root/assets/hero.svg?include";
 import Themes from "root/components/Themes";
 import Title from "root/components/Title";
 import Subtitle from "root/components/Subtitle";
-
-import HeroSvg from "root/assets/hero.svg?sprite";
+import SvgIncluder from "root/components/SvgIncluder";
 
 import styles from "./index.module.css";
 
@@ -24,7 +24,7 @@ export default function HomeHero() {
       </div>
 
       <div className={styles.foreground}>
-        <HeroSvg />
+        <SvgIncluder svg={heroSvg} />
       </div>
     </section>
   );
