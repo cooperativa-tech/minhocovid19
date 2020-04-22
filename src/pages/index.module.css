@@ -4,13 +4,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 
-.callToAction {
-  max-width: $seven-columns;
-  margin-top: $size-136;
-}
+  @media (width < $Breakpoint-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 
-.stats {
-  max-width: $eight-columns;
+  .callToAction {
+    max-width: $seven-columns;
+    margin-top: $size-136;
+
+    @media (width < $Breakpoint-mobile) {
+      margin-bottom: $size-36;
+    }
+  }
+
+  .stats {
+    max-width: $eight-columns;
+  }
 }

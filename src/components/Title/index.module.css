@@ -3,6 +3,11 @@
 .root {
   font-size: $size-36;
   line-height: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    font-size: $size-20;
+    line-height: $size-26;
+  }
 }
 
 .blueTheme {

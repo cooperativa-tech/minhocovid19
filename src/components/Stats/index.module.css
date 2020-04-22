@@ -8,6 +8,10 @@
   padding: $size-26 0;
 
   border-bottom: 1px solid $color-blue;
+
+  @media (width < $Breakpoint-mobile) {
+    padding: $size-16 0;
+  }
 }
 
 .value {
@@ -15,4 +19,9 @@
 
   font-size: $size-32;
   line-height: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    font-size: $size-20;
+    line-height: $size-26;
+  }
 }
