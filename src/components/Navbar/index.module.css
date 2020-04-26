@@ -2,6 +2,35 @@
 
 .root {
   position: relative;
+}
+
+.open {
+  position: absolute;
+
+  top: $size-36;
+  right: $size-26;
+
+  z-index: 2;
+
+  display: none;
+
+  width: $size-26;
+  height: $size-20;
+
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  @media (width < $Breakpoint-tablet) {
+    display: block;
+  }
+}
+
+.content {
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -9,6 +38,17 @@
   width: 100%;
   height: $size-148;
   padding: 0 $column;
+
+  transform: translateY(0);
+
+  transition-duration: 0.4s;
+
+  transition-property: transform, background;
+  transition-timing-function: ease-in-out;
+
+  @media (width < $Breakpoint-tablet) {
+    height: $size-84;
+  }
 }
 
 .links {
@@ -18,12 +58,40 @@
 
   font-size: $size-20;
   line-height: $size-26;
+
+  @media (width < $Breakpoint-tablet) {
+    display: none;
+  }
 }
 
 .logo {
   position: absolute;
   top: $size-64;
   z-index: 1;
+
+  width: $size-148;
+
+  transition: width, 0.2s ease-in;
+
+  @media (width < $Breakpoint-mobile) {
+    top: unset;
+    bottom: -50%;
+    left: 50%;
+
+    width: $size-64;
+
+    transform: translateX(-50%);
+  }
+
+  @media (width < $Breakpoint-tablet) and (width >= $Breakpoint-mobile) {
+    top: unset;
+    bottom: -100%;
+    left: 50%;
+
+    width: $size-112;
+
+    transform: translateX(-50%);
+  }
 }
 
 .link {
@@ -32,4 +100,39 @@
 
 .link:not(:last-child) {
   margin-right: $column;
+}
+
+.root.isFixed {
+  height: $size-148;
+}
+
+.root.isFixed .content {
+  position: fixed;
+  top: -$size-84;
+  left: 0;
+
+  width: 100vw;
+  height: $size-84;
+
+  background: $color-quarter-pearl-lusta;
+
+  transform: translateY(100%);
+}
+
+.root.isFixed .logo {
+  position: initial;
+
+  width: calc($size-148 / 2);
+
+  transform: translateY($size-12);
+
+  @media (width < $Breakpoint-tablet) {
+    position: absolute;
+
+    top: 0;
+
+    width: $size-64;
+
+    transform: translateX(-50%) translateY($size-12);
+  }
 }

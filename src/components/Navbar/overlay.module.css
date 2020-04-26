@@ -1,0 +1,107 @@
+@import "../../styles/settings.css";
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  padding: $size-36 $size-26;
+
+  background-color: $color-red;
+
+  transform: translateX(100%);
+
+  transition: transform 0.2s ease-out;
+
+  @media (width < $Breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.root.isOpen {
+  transform: translateX(0%);
+}
+
+.close {
+  position: fixed;
+
+  top: $size-36;
+  right: $size-26;
+
+  width: $size-20;
+  height: $size-20;
+
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.content {
+  margin-top: $size-84;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.link {
+  color: $color-white;
+
+  font-size: $size-20;
+  line-height: $size-26;
+
+  text-decoration: none;
+}
+
+.link:not(:last-child) {
+  margin-bottom: $size-36;
+}
+
+.contacts {
+  margin-top: $size-64;
+}
+
+.label {
+  margin-bottom: $size-12;
+
+  color: $color-white;
+  opacity: 0.6;
+
+  font-size: $size-16;
+  line-height: $size-20;
+}
+
+.contact {
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid $color-white;
+
+  color: $color-white;
+
+  font-size: $size-20;
+  line-height: $size-26;
+
+  text-decoration: none;
+}
+
+.phone {
+  margin-top: $size-26;
+}
+
+.phone .contact:last-child {
+  margin-left: $size-64;
+}
