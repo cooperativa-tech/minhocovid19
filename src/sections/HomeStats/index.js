@@ -10,7 +10,7 @@ import Stats from "root/components/Stats";
 
 import styles from "./index.module.css";
 
-function HomeStats({ totalDonations, deliveredMaterial }) {
+function HomeStats({ deliveredMaterial }) {
   return (
     <Section theme={Themes.lightBlue}>
       <Title theme={Themes.blue}>Como ajudamos?</Title>
@@ -23,10 +23,7 @@ function HomeStats({ totalDonations, deliveredMaterial }) {
       </div>
 
       <Stats
-        list={[
-          { label: "Total donations", value: totalDonations },
-          { label: "Delivered material", value: deliveredMaterial },
-        ]}
+        list={[{ label: "Material entregue", value: deliveredMaterial }]}
       />
 
       <div className={styles.link}>
@@ -39,7 +36,6 @@ function HomeStats({ totalDonations, deliveredMaterial }) {
 }
 
 HomeStats.propTypes = {
-  totalDonations: PropTypes.number.isRequired,
   deliveredMaterial: PropTypes.number.isRequired,
 };
 
