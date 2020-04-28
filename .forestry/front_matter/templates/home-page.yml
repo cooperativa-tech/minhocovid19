@@ -11,12 +11,22 @@ fields:
 - type: text
   name: keywords
   label: keywords
-- name: blocks
-  type: blocks
-  label: blocks
-  template_types: []
+- name: fields
+  type: field_group_list
+  fields:
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: content
   config:
     min: 
     max: 
+    labelField: 
+  label: fields
 pages:
 - cms/pages/index.json
