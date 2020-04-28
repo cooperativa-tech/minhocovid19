@@ -11,5 +11,12 @@ fields:
 - type: text
   name: keywords
   label: keywords
+- name: blocks
+  type: blocks
+  label: blocks
+  template_types: []
+  config:
+    min: 
+    max: 
 pages:
 - cms/pages/index.json
