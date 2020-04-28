@@ -1,4 +1,13 @@
 ---
 label: Generic Text
 hide_body: true
-fields: []
+fields:
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: content
