@@ -26,9 +26,7 @@ function HomeStats({ deliveredMaterial }) {
       />
 
       <div className={styles.link}>
-        <Link href="https://airtable.com/shrSo1Hv4Xhl8F0Un" external>
-          {content.statsAction}
-        </Link>
+        <Link href="/">{content.statsAction}</Link>
       </div>
     </Section>
   );
