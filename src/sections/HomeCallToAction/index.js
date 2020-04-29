@@ -5,36 +5,32 @@ import BigText from "root/components/BigText";
 import Themes from "root/components/Themes";
 import Button from "root/components/Button";
 
+import content from "cms/pages/index.json";
+
 import styles from "./index.module.css";
 
 export default function HomeCallToAction() {
   return (
     <div className={styles.root}>
       <Section theme={Themes.lightRed}>
-        <Title theme={Themes.sweetBrown}>Como posso ajudar?</Title>
+        <Title theme={Themes.sweetBrown}>{content.cta1Title}</Title>
 
         <div className={styles.description}>
-          <BigText>
-            Aceitamos doações de material para construir viseiras, material de
-            higiene, produtos alimentares ou dinheiro
-          </BigText>
+          <BigText>{content.cta1Subtitle}</BigText>
         </div>
 
-        <Button theme={Themes.red}>Quero Ajudar</Button>
+        <Button theme={Themes.red}>{content.cta1Action}</Button>
       </Section>
 
       <div className={styles.needHelpSection}>
         <Section theme={Themes.linen}>
-          <Title theme={Themes.neonCarrot}>Precisa de ajuda?</Title>
+          <Title theme={Themes.neonCarrot}>{content.cta2Title}</Title>
 
           <div className={styles.description}>
-            <BigText theme={Themes.goldYellow}>
-              Indique-nos o material de que precisa e nós entregamos com
-              segurança.
-            </BigText>
+            <BigText theme={Themes.goldYellow}>{content.cta2Subtitle}</BigText>
           </div>
 
-          <Button theme={Themes.neonCarrot}>Preciso de ajuda</Button>
+          <Button theme={Themes.neonCarrot}>{content.cta2Action}</Button>
         </Section>
       </div>
     </div>

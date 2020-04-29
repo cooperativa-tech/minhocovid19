@@ -1,5 +1,16 @@
 {
   "title": "MinhoCovid19",
   "description": "Juntos no combate contra a Covid-19. MinhoCovid19 é a plataforma que liga empresas, ONGs e particulares que podem ajudar quem precisa de apoio.",
-  "keywords": "minho,covid,guimarães,braga"
+  "keywords": "minho,covid,guimarães,braga",
+  "heroTitle": "Juntos paramos o Covid19",
+  "heroSubtitle": "Ligamos quem precisa de ajuda a quem pode ajudar",
+  "statsTitle": "Como ajudamos?",
+  "statsSubtitle": "Tentamos dar resposta a todo o tipo de pedidos de ajuda que recebmos. Até agora entregamos:",
+  "statsAction": "Ver todas as doações do MinhoCovid19",
+  "cta1Title": "Como posso ajudar?",
+  "cta1Subtitle": "Aceitamos doações de material para construir viseiras, material de higiene, produtos alimentares ou dinheiro",
+  "cta1Action": "Quero ajudar",
+  "cta2Title": "Precisa de ajuda?",
+  "cta2Subtitle": "Indique-nos o material de que precisa e nós entregamos com segurança.",
+  "cta2Action": "Preciso de ajuda"
 }

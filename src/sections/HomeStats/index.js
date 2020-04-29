@@ -8,18 +8,17 @@ import Title from "root/components/Title";
 import Section from "root/components/Section";
 import Stats from "root/components/Stats";
 
+import content from "cms/pages/index.json";
+
 import styles from "./index.module.css";
 
 function HomeStats({ deliveredMaterial }) {
   return (
     <Section theme={Themes.lightBlue}>
-      <Title theme={Themes.blue}>Como ajudamos?</Title>
+      <Title theme={Themes.blue}>{content.statsTitle}</Title>
 
       <div className={styles.description}>
-        <BigText theme={Themes.greyishBlue}>
-          Tentamos dar resposta a todo o tipo de pedidos de ajuda que recebemos.
-          Até agora entregamos:
-        </BigText>
+        <BigText theme={Themes.greyishBlue}>{content.statsSubtitle}</BigText>
       </div>
 
       <Stats
@@ -28,7 +27,7 @@ function HomeStats({ deliveredMaterial }) {
 
       <div className={styles.link}>
         <Link href="https://airtable.com/shrSo1Hv4Xhl8F0Un" external>
-          Ver todas as doações do MinhoCovid19
+          {content.statsAction}
         </Link>
       </div>
     </Section>

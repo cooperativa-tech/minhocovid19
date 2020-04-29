@@ -5,17 +5,24 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: cms/components/navbar.json
+  label: Navbar
+- type: document
   path: cms/pages/index.json
   label: Home Page
 - type: document
   path: cms/pages/kitchensink.json
   label: Kitchen Sink
+- type: document
+  path: cms/pages/faqs.json
+  label: FAQs
 upload_dir: cms/assets
 public_path: "/assets"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
+  preview_output_directory: public
   install_dependencies_command: yarn
   preview_docker_image: node:10
   mount_path: "/srv"
