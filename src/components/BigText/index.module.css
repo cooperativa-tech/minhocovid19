@@ -3,6 +3,11 @@
 .root {
   font-size: $size-26;
   line-height: $size-36;
+
+  @media (width < $Breakpoint-mobile) {
+    font-size: $size-16;
+    line-height: $size-20;
+  }
 }
 
 .redTheme {

@@ -9,7 +9,15 @@
 
   font-size: $size-26;
   line-height: $size-36;
+
   text-decoration: none;
+
+  @media (width < $Breakpoint-mobile) {
+    padding-bottom: $size-8;
+
+    font-size: $size-16;
+    line-height: $size-20;
+  }
 }
 
 .underline {
@@ -25,6 +33,10 @@
   transform: translateY(0px);
 
   transition: transform 0.3s ease-in;
+
+  @media (width < $Breakpoint-mobile) {
+    bottom: 8px;
+  }
 }
 
 .root:hover .underline {

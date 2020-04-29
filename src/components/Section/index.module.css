@@ -4,6 +4,12 @@
   padding: $size-64;
 
   border-radius: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    padding: $size-26;
+
+    border-radius: $size-26;
+  }
 }
 
 .lightBlueTheme {

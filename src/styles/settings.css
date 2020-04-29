@@ -49,3 +49,4 @@ $fifteen-columns: calc(15 * $column + 14 * $gutter);
 $sixteen-columns: calc(16 * $column + 15 * $gutter);
 
 $content-width-desktop: $sixteen-columns;
+$Breakpoint-mobile: 768px;

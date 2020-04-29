@@ -3,8 +3,17 @@
 .description {
   margin-top: $size-20;
   margin-bottom: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-12;
+    margin-bottom: $size-36;
+  }
 }
 
 .link {
   margin-top: $size-64;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-36;
+  }
 }
