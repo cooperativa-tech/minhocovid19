@@ -1,0 +1,16 @@
+{
+  "faqs": [
+    {
+      "content": "Lorem Ipsum Badjerans",
+      "title": "Example one"
+    },
+    {
+      "title": "Example two",
+      "content": "Lorem Ipsum Badjerones"
+    },
+    {
+      "title": "Example three",
+      "content": "Badjeronis Lorem Ipsum\n\nWith a newline."
+    }
+  ]
+}

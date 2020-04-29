@@ -4,29 +4,45 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: TITLE
 - type: textarea
   name: description
-  label: description
+  label: DESCRIPTION
 - type: text
   name: keywords
-  label: keywords
-- name: fields
-  type: field_group_list
-  fields:
-  - name: content
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: content
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: fields
+  label: KEYWORDS
+- type: text
+  name: heroTitle
+  label: HERO TITLE
+- type: textarea
+  name: heroSubtitle
+  label: HERO SUBTITLE
+- type: text
+  name: statsTitle
+  label: STATS TITLE
+- type: text
+  name: statsAction
+  label: STATS ACTION
+- type: textarea
+  name: statsSubtitle
+  label: STATS SUBTITLE
+- type: text
+  name: cta1Title
+  label: CTA 1 TITLE
+- type: textarea
+  name: cta1Subtitle
+  label: CTA 1 SUBTITLE
+- type: text
+  name: cta1Action
+  label: CTA 1 ACTION
+- type: text
+  name: cta2Title
+  label: CTA 2 TITLE
+- type: textarea
+  name: cta2Subtitle
+  label: CTA 2 SUBTITLE
+- type: text
+  name: cta2Action
+  label: CTA 2 ACTION
 pages:
 - cms/pages/index.json

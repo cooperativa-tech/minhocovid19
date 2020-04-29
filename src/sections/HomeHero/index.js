@@ -6,6 +6,8 @@ import Title from "root/components/Title";
 import Subtitle from "root/components/Subtitle";
 import SvgIncluder from "root/components/SvgIncluder";
 
+import content from "cms/pages/index.json";
+
 import styles from "./index.module.css";
 
 export default function HomeHero() {
@@ -13,13 +15,11 @@ export default function HomeHero() {
     <section className={styles.root}>
       <div className={styles.copy}>
         <Title variant="h1" theme={Themes.neonCarrot}>
-          Juntos paramos o Covid19
+          {content.heroTitle}
         </Title>
 
         <div className={styles.subtitle}>
-          <Subtitle theme={Themes.red}>
-            Ligamos quem precisa de ajuda a quem pode ajudar
-          </Subtitle>
+          <Subtitle theme={Themes.red}>{content.heroSubtitle}</Subtitle>
         </div>
       </div>
 
