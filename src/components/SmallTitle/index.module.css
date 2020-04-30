@@ -3,6 +3,15 @@
 .root {
   font-size: $size-26;
   line-height: $size-36;
+
+  @media (width < $Breakpoint-mobile) {
+    font-size: $size-20;
+    line-height: $size-26;
+  }
+}
+
+.blueTheme {
+  color: $color-blue;
 }
 
 .redTheme {
@@ -15,4 +24,8 @@
 
 .greyishBlueTheme {
   color: $color-greyish-blue;
+}
+
+.sweetBrownTheme {
+  color: $color-sweet-brown;
 }

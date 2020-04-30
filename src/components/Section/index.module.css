@@ -5,6 +5,10 @@
 
   border-radius: $size-48;
 
+  @media (width < $Breakpoint-tablet) {
+    padding: $size-48 $size-36;
+  }
+
   @media (width < $Breakpoint-mobile) {
     padding: $size-26;
 
