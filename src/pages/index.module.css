@@ -9,17 +9,18 @@
     display: flex;
     flex-direction: column;
   }
+}
 
-  .callToAction {
-    max-width: $seven-columns;
-    margin-top: $size-136;
+.callToAction {
+  max-width: $seven-columns;
+  margin-top: $size-136;
+  margin-right: $gutter;
 
-    @media (width < $Breakpoint-mobile) {
-      margin-bottom: $size-36;
-    }
+  @media (width < $Breakpoint-mobile) {
+    margin-bottom: $size-36;
   }
+}
 
-  .stats {
-    max-width: $eight-columns;
-  }
+.stats {
+  max-width: $eight-columns;
 }

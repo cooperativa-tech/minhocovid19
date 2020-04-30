@@ -1,7 +1,7 @@
+/* eslint-disable no-alert */
 import React from "react";
 import PropTypes from "prop-types";
 
-import BigText from "root/components/BigText";
 import Button from "root/components/Button";
 import Layout from "root/components/Layout";
 import Link from "root/components/Link";
@@ -9,7 +9,7 @@ import Logo from "root/components/Logo";
 import Navbar from "root/components/Navbar";
 import Section from "root/components/Section";
 import Stats from "root/components/Stats";
-import Subtitle from "root/components/Subtitle";
+import SmallTitle from "root/components/SmallTitle";
 import Text from "root/components/Text";
 import Themes from "root/components/Themes";
 import Title from "root/components/Title";
@@ -43,24 +43,15 @@ const KitchenSink = ({ totalDonations, deliveredMaterial }) => (
         Aceitamos doações de material para construir viseiras, material de
         higiene, produtos alimentares ou dinheiro
       </Text>
-      <Subtitle theme={Themes.greyishBlue}>Precisa de Ajuda?</Subtitle>
-      <Subtitle theme={Themes.neonCarrot}>Como ajudar?</Subtitle>
-      <Subtitle theme={Themes.red}>Badjeros Badjorans? Bodjarens.</Subtitle>
+      <SmallTitle theme={Themes.greyishBlue}>Precisa de Ajuda?</SmallTitle>
+      <SmallTitle theme={Themes.neonCarrot}>Como ajudar?</SmallTitle>
+      <SmallTitle theme={Themes.red}>Badjeros Badjorans? Bodjarens.</SmallTitle>
       <Stats
         list={[
           { label: "Total donations", value: totalDonations },
           { label: "Delivered material", value: deliveredMaterial },
         ]}
       />
-      <BigText theme="redTheme">
-        Ligamos quem precisa de ajuda a quem pode ajudar.
-      </BigText>
-      <BigText theme="neonCarrotTheme">
-        Ligamos quem precisa de ajuda a quem pode ajudar.
-      </BigText>
-      <BigText theme="greyishBlueTheme">
-        Ligamos quem precisa de ajuda a quem pode ajudar.
-      </BigText>
       <Button theme={Themes.red} href="kitchensink">
         Kitchen
       </Button>

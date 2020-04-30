@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "root/components/Section";
-import Title from "root/components/Title";
-import BigText from "root/components/BigText";
+import SmallTitle from "root/components/SmallTitle";
+import Text from "root/components/Text";
 import Themes from "root/components/Themes";
 import Button from "root/components/Button";
 
@@ -13,10 +13,10 @@ export default function HomeCallToAction() {
   return (
     <div className={styles.root}>
       <Section theme={Themes.lightRed}>
-        <Title theme={Themes.sweetBrown}>{content.cta1Title}</Title>
+        <SmallTitle theme={Themes.sweetBrown}>{content.cta1Title}</SmallTitle>
 
         <div className={styles.description}>
-          <BigText>{content.cta1Subtitle}</BigText>
+          <Text theme={Themes.red}>{content.cta1Subtitle}</Text>
         </div>
 
         <Button theme={Themes.red}>{content.cta1Action}</Button>
@@ -24,10 +24,10 @@ export default function HomeCallToAction() {
 
       <div className={styles.needHelpSection}>
         <Section theme={Themes.linen}>
-          <Title theme={Themes.neonCarrot}>{content.cta2Title}</Title>
+          <SmallTitle theme={Themes.neonCarrot}>{content.cta2Title}</SmallTitle>
 
           <div className={styles.description}>
-            <BigText theme={Themes.goldYellow}>{content.cta2Subtitle}</BigText>
+            <Text theme={Themes.goldYellow}>{content.cta2Subtitle}</Text>
           </div>
 
           <Button theme={Themes.neonCarrot}>{content.cta2Action}</Button>

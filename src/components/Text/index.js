@@ -10,8 +10,12 @@ const Text = ({ children, theme }) => {
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot, Themes.greyishBlue])
-    .isRequired,
+  theme: PropTypes.oneOf([
+    Themes.red,
+    Themes.neonCarrot,
+    Themes.goldYellow,
+    Themes.greyishBlue,
+  ]).isRequired,
 };
 
 export default Text;
