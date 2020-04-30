@@ -15,18 +15,22 @@ export default function HomePage({ transparencyReport }) {
       keywords={content.keywords}
     >
       <table style={{ marginTop: "300px" }}>
-        <tr style={{ textAlign: "left" }}>
-          <th>Propósito</th>
-          <th>Data</th>
-          <th>Valor</th>
-        </tr>
-        {transparencyReport.map((reportLine) => (
-          <tr>
-            <td>{reportLine.purpose}</td>
-            <td>{reportLine.date}</td>
-            <td>{reportLine.value}€</td>
+        <thead>
+          <tr style={{ textAlign: "left" }}>
+            <th>Propósito</th>
+            <th>Data</th>
+            <th>Valor</th>
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {transparencyReport.map((reportLine, index) => (
+            <tr key={index}>
+              <td>{reportLine.purpose}</td>
+              <td>{reportLine.date}</td>
+              <td>{reportLine.value}€</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </Layout>
   );
@@ -35,7 +39,7 @@ export default function HomePage({ transparencyReport }) {
 HomePage.propTypes = {
   transparencyReport: PropTypes.arrayOf(
     PropTypes.shape({
-      value: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
     })
   ).isRequired,
 };
