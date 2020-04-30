@@ -1,14 +1,15 @@
 @import "../../styles/settings.css";
 
 .root {
-  width: auto;
-  height: $size-64;
+  display: inline-block;
+
   padding: $size-20 $size-32;
 
   cursor: pointer;
 
   font-size: $size-20;
   line-height: $size-26;
+  text-align: center;
 
   text-decoration: none;
 
@@ -36,4 +37,10 @@
   background: $color-neon-carrot;
 
   color: $color-white;
+}
+
+.whiteTheme {
+  background-color: $color-white;
+
+  color: $color-red;
 }

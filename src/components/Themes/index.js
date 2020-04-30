@@ -8,4 +8,5 @@ export default {
   linen: "linenTheme",
   red: "redTheme",
   sweetBrown: "sweetBrownTheme",
+  white: "whiteTheme",
 };

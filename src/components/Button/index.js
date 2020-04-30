@@ -28,7 +28,8 @@ Button.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
-  theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot]).isRequired,
+  theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot, Themes.white])
+    .isRequired,
 };
 
 Button.defaultProps = {
