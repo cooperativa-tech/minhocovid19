@@ -47,7 +47,13 @@
   transition-timing-function: ease-in-out;
 
   @media (width < $Breakpoint-tablet) {
+    position: relative;
+    left: 50%;
+    width: 100vw;
     height: $size-84;
+    padding: 0;
+
+    transform: translateX(-50%);
   }
 }
 
