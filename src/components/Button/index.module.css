@@ -3,7 +3,12 @@
 .root {
   display: inline-block;
 
+  width: auto;
+  height: $size-64;
   padding: $size-20 $size-32;
+
+  border: none;
+  border-radius: $size-26;
 
   cursor: pointer;
 
@@ -17,6 +22,8 @@
     width: 100%;
     height: 52px;
     padding: $size-16 $size-32;
+
+    border-radius: $size-12;
 
     font-size: $size-16;
     line-height: $size-20;
