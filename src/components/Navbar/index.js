@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink href="/">{content.faq}</NavLink>
         </li>
         <li className={styles.link}>
-          <NavLink href="/">{content.transparency}</NavLink>
+          <NavLink href="/faqs">{content.transparency}</NavLink>
         </li>
         <li className={styles.link}>
           <NavButton href="/">{content.cta}</NavButton>

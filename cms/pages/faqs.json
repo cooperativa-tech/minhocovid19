@@ -1,4 +1,7 @@
 {
+  "title": "MinhoCovid19 | FAQs",
+  "description": "Perguntas e dúvidas frequentes sobre como pode ajudar, fazer um pedido de ajuda, e como se tornar parceiro do MinhoCovid19.",
+  "keywords": "minho,covid,guimarães,braga",
   "faqs": [
     {
       "content": "Lorem Ipsum Badjerans",
@@ -10,7 +13,7 @@
     },
     {
       "title": "Example three",
-      "content": "Badjeronis Lorem Ipsum\n\nWith a newline."
+      "content": "Badjeronis Lorem Ipsum\n\nWith a newline.\n[I'm an inline-style link with title](https://www.google.com)"
     }
   ]
 }

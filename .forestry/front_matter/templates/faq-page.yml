@@ -8,21 +8,21 @@ fields:
   - name: title
     type: text
     config:
-      required: false
+      required: true
     label: Title
   - name: content
     type: textarea
     default: ''
     config:
-      required: false
-      wysiwyg: false
+      required: true
+      wysiwyg: true
       schema:
         format: markdown
     label: Content
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: FAQs
 pages:
 - cms/pages/faqs.json
