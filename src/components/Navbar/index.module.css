@@ -104,6 +104,10 @@
 
 .root.isFixed {
   height: $size-148;
+
+  @media (width < $Breakpoint-tablet) {
+    height: $size-84;
+  }
 }
 
 .root.isFixed .content {
