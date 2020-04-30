@@ -49,6 +49,7 @@
   @media (width < $Breakpoint-tablet) {
     position: relative;
     left: 50%;
+
     width: 100vw;
     height: $size-84;
     padding: 0;
