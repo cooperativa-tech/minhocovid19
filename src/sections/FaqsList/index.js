@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import content from "cms/pages/faqs.json";
 import Link from "root/components/Link";
-import Subtitle from "root/components/Subtitle";
+import SmallTitle from "root/components/SmallTitle";
 import Text from "root/components/Text";
 import Themes from "root/components/Themes";
 
@@ -28,7 +28,7 @@ export default function FaqsList() {
     <div>
       {content.faqs.map((faq, index) => (
         <div key={index}>
-          <Subtitle theme={Themes.greyishBlue}>{faq.title}</Subtitle>
+          <SmallTitle theme={Themes.greyishBlue}>{faq.title}</SmallTitle>
 
           <div className={styles.faqContent}>
             <ReactMarkdown

@@ -1,0 +1,10 @@
+@import "../../styles/settings.css";
+
+.subtitle {
+  margin: $size-26 0;
+}
+
+.contactUs {
+  margin-top: $size-64;
+  margin-bottom: $size-26;
+}

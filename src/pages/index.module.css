@@ -11,7 +11,7 @@
   }
 }
 
-.callToAction {
+.left {
   max-width: $seven-columns;
   margin-top: $size-136;
   margin-right: $gutter;
@@ -21,6 +21,6 @@
   }
 }
 
-.stats {
+.right {
   max-width: $eight-columns;
 }

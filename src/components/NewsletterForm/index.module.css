@@ -1,0 +1,40 @@
+@import "../../styles/settings.css";
+
+.root {
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+
+  border: 1px solid $color-gold-yellow;
+  border-radius: 12px;
+
+  input {
+    flex-grow: 1;
+    padding-top: $size-20;
+    padding-bottom: $size-20;
+    padding-left: $size-32;
+
+    border: none;
+    color: $color-gold-yellow;
+
+    font-size: 20px;
+  }
+
+  input::placeholder {
+    color: $color-gold-yellow;
+    opacity: 1;
+
+    font-size: 20px;
+  }
+
+  button {
+    padding: $size-20 $size-32;
+
+    background-color: $color-neon-carrot;
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+  }
+}

@@ -2,13 +2,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import styles from "./index.module.css";
+
 function SvgIncluder({ svg, width, height }) {
   const style = {
     width,
     height,
   };
 
-  return <div style={style} dangerouslySetInnerHTML={{ __html: svg }} />;
+  return (
+    <div
+      style={style}
+      className={styles.root}
+      dangerouslySetInnerHTML={{ __html: svg }}
+    />
+  );
 }
 
 SvgIncluder.propTypes = {
