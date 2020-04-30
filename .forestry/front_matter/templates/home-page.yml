@@ -44,5 +44,17 @@ fields:
 - type: text
   name: cta2Action
   label: CTA 2 ACTION
+- type: text
+  name: newsletterTitle
+  label: NEWSLETTER TITLE
+- type: text
+  name: newsletterSubtitle
+  label: NEWSLETTER SUBTITLE
+- type: text
+  name: newsletterContactLabel
+  label: NEWSLETTER CONTACT LABEL
+- type: text
+  name: newsletterContactEmail
+  label: NEWSLETTER CONTACT EMAIL
 pages:
 - cms/pages/index.json

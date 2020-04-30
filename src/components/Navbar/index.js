@@ -20,10 +20,10 @@ const Navbar = () => {
           <NavLink href="/">{content.about}</NavLink>
         </li>
         <li className={styles.link}>
-          <NavLink href="/">{content.faq}</NavLink>
+          <NavLink href="/faqs">{content.faq}</NavLink>
         </li>
         <li className={styles.link}>
-          <NavLink href="/faqs">{content.transparency}</NavLink>
+          <NavLink href="/transparency">{content.transparency}</NavLink>
         </li>
         <li className={styles.link}>
           <NavButton href="/">{content.cta}</NavButton>

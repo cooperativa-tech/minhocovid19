@@ -12,5 +12,9 @@
   "cta1Action": "Quero ajudar",
   "cta2Title": "Precisa de ajuda?",
   "cta2Subtitle": "Indique-nos o material de que precisa e nós entregamos com segurança. Entraremos em contacto em 2 dias úteis.",
-  "cta2Action": "Preciso de ajuda"
+  "cta2Action": "Preciso de ajuda",
+  "newsletterTitle": "Quer receber boas notícias no seu email?",
+  "newsletterSubtitle": "Prometemos não enviar spam!",
+  "newsletterContactLabel": "Entre em contacto connosco",
+  "newsletterContactEmail": "minhocovid19@aaum.pt"
 }

@@ -5,13 +5,18 @@ import Themes from "../Themes";
 import styles from "./index.module.css";
 
 const Section = ({ children, theme }) => (
-  <section className={`${styles.root} ${styles[theme]}`}>{children}</section>
+  <section className={`${styles.root} ${theme ? styles[theme] : ""}`}>
+    {children}
+  </section>
 );
 
 Section.propTypes = {
-  theme: PropTypes.oneOf([Themes.lightBlue, Themes.lightRed, Themes.linen])
-    .isRequired,
+  theme: PropTypes.oneOf([Themes.lightBlue, Themes.lightRed, Themes.linen]),
   children: PropTypes.node.isRequired,
+};
+
+Section.defaultProps = {
+  theme: null,
 };
 
 export default Section;

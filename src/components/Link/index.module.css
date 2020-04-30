@@ -3,14 +3,14 @@
 .root {
   position: relative;
 
-  padding-bottom: $size-12;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 
-  color: $color-blue;
+  padding-bottom: $size-12;
 
   font-size: $size-20;
   line-height: $size-26;
-
-  text-decoration: none;
 
   @media (width < $Breakpoint-mobile) {
     padding-bottom: $size-8;
@@ -18,6 +18,17 @@
     font-size: $size-16;
     line-height: $size-20;
   }
+}
+
+.anchor {
+  color: $color-blue;
+
+  text-decoration: none;
+}
+
+.icon {
+  height: $size-26;
+  margin-right: $size-20;
 }
 
 .underline {

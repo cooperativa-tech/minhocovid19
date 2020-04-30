@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import HomeHero from "root/sections/HomeHero";
 import Layout from "root/components/Layout";
 import HomeCallToAction from "root/sections/HomeCallToAction";
+import HomeNewsletter from "root/sections/HomeNewsletter";
 import HomeStats from "root/sections/HomeStats";
 import getTotalDonations from "root/lib/getTotalDonations";
 import getDeliveredMaterial from "root/lib/getDeliveredMaterial";
@@ -22,11 +23,13 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
       <HomeHero />
 
       <div className={styles.sections}>
-        <div className={styles.callToAction}>
+        <div className={styles.left}>
           <HomeCallToAction />
+
+          <HomeNewsletter />
         </div>
 
-        <div className={styles.stats}>
+        <div className={styles.right}>
           <HomeStats
             totalDonations={totalDonations}
             deliveredMaterial={deliveredMaterial}
