@@ -1,4 +1,7 @@
 {
+  "title": "MinhoCovid19 | FAQs",
+  "description": "Perguntas e dúvidas frequentes sobre como pode ajudar, fazer um pedido de ajuda, e como se tornar parceiro do MinhoCovid19.",
+  "keywords": "minho,covid,guimarães,braga",
   "faqs": [
     {
       "content": "Lorem Ipsum Badjerans",
@@ -9,8 +12,8 @@
       "content": "Lorem Ipsum Badjerones"
     },
     {
-      "title": "Example three",
-      "content": "Badjeronis Lorem Ipsum\n\nWith a newline."
+      "title": "Example three (has a link)",
+      "content": "Os nossos voluntários entregam, diariamente, os materiais que recebemos às instituições que nos enviam os pedidos. Nenhum dos materiais oferecidos será comercializado pelo Minho Covid-19. Pode consultar todas as doações efetuadas e correspondentes entregas feitas até ao momento no nosso relatório de transparência, [aqui](/transparency)."
     }
   ]
 }

@@ -1,0 +1,9 @@
+@import "../../styles/settings.css";
+
+.faqContent {
+  margin-top: $size-20;
+
+  p {
+    margin-bottom: $size-20;
+  }
+}
