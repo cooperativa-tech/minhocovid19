@@ -40,3 +40,6 @@ jspm_packages
 .DS_Store
 out
 .envrc
+
+# Local Netlify folder
+.netlify

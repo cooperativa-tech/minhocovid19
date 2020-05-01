@@ -1,6 +1,7 @@
 import React from "react";
 
 import heroSvg from "root/assets/hero.svg?include";
+import heroMobileSvg from "root/assets/hero-mobile.svg?include";
 import Themes from "root/components/Themes";
 import Text from "root/components/Text";
 import Title from "root/components/Title";
@@ -25,6 +26,10 @@ export default function HomeHero() {
 
       <div className={styles.foreground}>
         <SvgIncluder svg={heroSvg} />
+      </div>
+
+      <div className={styles.foregroundMobile}>
+        <SvgIncluder svg={heroMobileSvg} />
       </div>
     </section>
   );

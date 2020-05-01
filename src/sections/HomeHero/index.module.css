@@ -12,10 +12,22 @@
 
   background: linear-gradient(94.99deg, #f9f1e5 13.96%, #f9f1e5 90.87%);
   border-radius: 128px;
+
+  @media (width < $Breakpoint-mobile) {
+    padding: $size-84 $gutter $size-136 $gutter;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    border-radius: $size-26;
+  }
 }
 
 .subtitle {
   margin-top: $size-20;
+
+  @media (width < $Breakpoint-mobile) {
+    max-width: $four-columns;
+  }
 }
 
 .foreground {
@@ -24,4 +36,36 @@
 
   width: calc(100% - $column);
   padding-right: $column;
+
+  @media (width < 1248px) {
+    top: 45%;
+    left: 0;
+
+    width: 100%;
+    padding-right: calc($column + $size-16);
+  }
+
+  @media (width < $Breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.foregroundMobile {
+  position: absolute;
+  top: unset;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-right: $size-16;
+
+  transform: translateY(40%);
+
+  svg {
+    width: 100%;
+  }
+
+  @media (width >= $Breakpoint-mobile) {
+    display: none;
+  }
 }
