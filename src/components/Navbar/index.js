@@ -6,8 +6,8 @@ import NavLink from "root/components/NavLink";
 import NavButton from "root/components/NavButton";
 import SvgIncluder from "root/components/SvgIncluder";
 import content from "cms/components/navbar.json";
-
 import Overlay from "./overlay";
+
 import styles from "./index.module.css";
 
 const options = {
