@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Footer from "root/components/Footer";
 import HomeHero from "root/sections/HomeHero";
 import Layout from "root/components/Layout";
 import HomeCallToAction from "root/sections/HomeCallToAction";
@@ -26,7 +27,9 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
         <div className={styles.left}>
           <HomeCallToAction />
 
-          <HomeNewsletter />
+          <div className={styles.newsletter}>
+            <HomeNewsletter />
+          </div>
         </div>
 
         <div className={styles.right}>
@@ -36,6 +39,8 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
           />
         </div>
       </div>
+
+      <Footer />
     </Layout>
   );
 }

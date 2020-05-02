@@ -1,0 +1,21 @@
+@import "../../styles/settings.css";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 0 $size-64;
+  margin: $size-112 0;
+}
+
+.subtitle {
+  margin: $size-26 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialItem {
+  margin-right: $size-26;
+}
