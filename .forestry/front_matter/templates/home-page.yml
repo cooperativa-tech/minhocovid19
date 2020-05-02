@@ -62,7 +62,7 @@ fields:
     min:
     max:
     labelField:
-  label: FAQs
+  label: INSTITUTIONS LIST
 - type: text
   name: newsletterTitle
   label: NEWSLETTER TITLE
