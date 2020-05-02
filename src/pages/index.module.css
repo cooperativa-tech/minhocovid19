@@ -21,6 +21,10 @@
   }
 }
 
+.newsletter {
+  margin-top: $size-112;
+}
+
 .right {
   max-width: $eight-columns;
 }
