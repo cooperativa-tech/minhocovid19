@@ -13,6 +13,13 @@
   "cta2Title": "Precisa de ajuda?",
   "cta2Subtitle": "Indique-nos o material de que precisa e nós entregamos com segurança. Entraremos em contacto em 2 dias úteis.",
   "cta2Action": "Preciso de ajuda",
+  "institutionsTitle": "Quem já ajudamos?",
+  "institutionsSubtitle": "Graças a si, MinhoCovid19 já conseguiu ajudar:",
+  "institutionsList": [
+    { "name": "Instituição A" },
+    { "name": "Instituição B" },
+    { "name": "Instituição C" }
+  ],
   "newsletterTitle": "Quer receber boas notícias no seu email?",
   "newsletterSubtitle": "Prometemos não enviar spam!",
   "newsletterContactLabel": "Entre em contacto connosco",

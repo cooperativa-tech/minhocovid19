@@ -20,9 +20,9 @@ fields:
         format: markdown
     label: Content
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: FAQs
 pages:
 - cms/pages/faqs.json
