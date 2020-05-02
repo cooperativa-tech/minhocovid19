@@ -5,10 +5,19 @@
   flex-direction: column;
   padding: 0 $size-64;
   margin: $size-112 0;
+
+  @media (width < $Breakpoint-mobile) {
+    padding: 0 $gutter;
+    margin: $size-32 0;
+  }
 }
 
 .subtitle {
   margin: $size-26 0;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-12;
+  }
 }
 
 .social {
@@ -17,5 +26,11 @@
 }
 
 .socialItem {
+  width: $size-64;
   margin-right: $size-26;
+
+  @media (width < $Breakpoint-mobile) {
+    width: $size-48;
+    margin-right: $size-20;
+  }
 }

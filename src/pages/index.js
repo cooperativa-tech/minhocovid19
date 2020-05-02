@@ -27,7 +27,7 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
         <div className={styles.left}>
           <HomeCallToAction />
 
-          <div className={styles.newsletter}>
+          <div className={styles.newsletterDesktop}>
             <HomeNewsletter />
           </div>
         </div>
@@ -38,6 +38,10 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
             deliveredMaterial={deliveredMaterial}
           />
         </div>
+      </div>
+
+      <div className={styles.newsletterMobile}>
+        <HomeNewsletter />
       </div>
 
       <Footer />

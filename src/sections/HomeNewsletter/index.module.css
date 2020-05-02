@@ -2,9 +2,17 @@
 
 .subtitle {
   margin: $size-26 0;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-12;
+  }
 }
 
 .contactUs {
   margin-top: $size-64;
   margin-bottom: $size-26;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-bottom: $size-12;
+  }
 }

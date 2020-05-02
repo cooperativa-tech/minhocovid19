@@ -21,10 +21,22 @@
   }
 }
 
-.newsletter {
+.newsletterDesktop {
   margin-top: $size-112;
+
+  @media (width < $Breakpoint-mobile) {
+    display: none;
+  }
 }
 
 .right {
   max-width: $eight-columns;
+}
+
+.newsletterMobile {
+  margin-top: $size-48;
+
+  @media (width >= $Breakpoint-mobile) {
+    display: none;
+  }
 }
