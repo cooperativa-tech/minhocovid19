@@ -29,6 +29,12 @@
 .icon {
   height: $size-26;
   margin-right: $size-20;
+
+  @media (width < $Breakpoint-mobile) {
+    width: $size-26;
+    height: $size-20;
+    margin-right: $size-12;
+  }
 }
 
 .underline {

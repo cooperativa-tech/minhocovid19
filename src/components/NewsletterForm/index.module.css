@@ -1,6 +1,13 @@
 @import "../../styles/settings.css";
 
+$Breakpoint-smallMobile: 460px;
+
 .root {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
   display: flex;
   flex-direction: row;
 
@@ -18,23 +25,64 @@
     border: none;
     color: $color-gold-yellow;
 
-    font-size: 20px;
+    font-size: $size-20;
+
+    @media (width < $Breakpoint-mobile) {
+      padding-top: $size-16;
+      padding-bottom: $size-16;
+
+      font-size: $size-16;
+    }
   }
 
   input::placeholder {
     color: $color-gold-yellow;
     opacity: 1;
 
-    font-size: 20px;
+    font-size: $size-20;
+
+    @media (width < $Breakpoint-mobile) {
+      font-size: $size-16;
+    }
+  }
+}
+
+.hidden {
+  position: absolute !important;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(1px, 1px, 1px, 1px);
+
+  white-space: nowrap;
+}
+
+.button {
+  padding: $size-20 $size-32;
+
+  background-color: $color-neon-carrot;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: white;
+
+  @media (width < $Breakpoint-mobile) {
+    padding-top: $size-16;
+    padding-bottom: $size-16;
   }
 
-  button {
-    padding: $size-20 $size-32;
+  @media (width < $Breakpoint-smallMobile) {
+    display: none;
+  }
+}
 
-    background-color: $color-neon-carrot;
-    border: none;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    color: white;
+.smallMobileButton {
+  margin-top: $size-12;
+
+  @media (width >= $Breakpoint-smallMobile) {
+    display: none;
   }
 }
