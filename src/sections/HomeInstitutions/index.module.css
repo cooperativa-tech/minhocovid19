@@ -1,0 +1,14 @@
+@import "../../styles/settings.css";
+
+.subtitle {
+  margin-top: $size-26;
+  margin-bottom: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    margin: $size-12 0;
+  }
+}
+
+.institution {
+  margin-top: $size-26;
+}

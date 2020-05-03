@@ -16,7 +16,13 @@
   margin-top: $size-136;
   margin-right: $gutter;
 
+  @media (width < $Breakpoint-tablet) {
+    max-width: 50%;
+  }
+
   @media (width < $Breakpoint-mobile) {
+    max-width: 100%;
+    margin-right: 0;
     margin-bottom: $size-36;
   }
 }
@@ -31,6 +37,22 @@
 
 .right {
   max-width: $eight-columns;
+
+  @media (width < $Breakpoint-tablet) {
+    max-width: 50%;
+  }
+
+  @media (width < $Breakpoint-mobile) {
+    max-width: 100%;
+  }
+}
+
+.institution {
+  margin-top: $size-112;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-32;
+  }
 }
 
 .newsletterMobile {

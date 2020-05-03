@@ -5,6 +5,7 @@ import Footer from "root/components/Footer";
 import HomeHero from "root/sections/HomeHero";
 import Layout from "root/components/Layout";
 import HomeCallToAction from "root/sections/HomeCallToAction";
+import HomeInstitutions from "root/sections/HomeInstitutions";
 import HomeNewsletter from "root/sections/HomeNewsletter";
 import HomeStats from "root/sections/HomeStats";
 import getTotalDonations from "root/lib/getTotalDonations";
@@ -37,6 +38,10 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
             totalDonations={totalDonations}
             deliveredMaterial={deliveredMaterial}
           />
+
+          <div className={styles.institution}>
+            <HomeInstitutions />
+          </div>
         </div>
       </div>
 

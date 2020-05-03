@@ -45,6 +45,25 @@ fields:
   name: cta2Action
   label: CTA 2 ACTION
 - type: text
+  name: institutionsTitle
+  label: INSTITUTIONS TITLE
+- type: text
+  name: institutionsSubtitle
+  label: INSTITUTIONS SUBTITLE
+- name: institutionsList
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Title
+  config:
+    min:
+    max:
+    labelField:
+  label: INSTITUTIONS LIST
+- type: text
   name: newsletterTitle
   label: NEWSLETTER TITLE
 - type: text
