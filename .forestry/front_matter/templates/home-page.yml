@@ -59,9 +59,9 @@ fields:
       required: true
     label: Title
   config:
-    min:
-    max:
-    labelField:
+    min: 
+    max: 
+    labelField: 
   label: INSTITUTIONS LIST
 - type: text
   name: newsletterTitle
