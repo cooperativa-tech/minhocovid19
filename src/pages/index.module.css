@@ -30,7 +30,7 @@
 .newsletterDesktop {
   margin-top: $size-112;
 
-  @media (width < $Breakpoint-mobile) {
+  @media (width < $Breakpoint-tablet) {
     display: none;
   }
 }
@@ -55,10 +55,14 @@
   }
 }
 
-.newsletterMobile {
+.newsletterFallback {
   margin-top: $size-48;
 
-  @media (width >= $Breakpoint-mobile) {
+  @media (width >= $Breakpoint-tablet) {
     display: none;
+  }
+
+  @media (width < $Breakpoint-tablet) {
+    max-width: $seven-columns;
   }
 }

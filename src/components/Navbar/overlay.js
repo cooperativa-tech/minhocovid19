@@ -1,5 +1,6 @@
 import React from "react";
 import Proptypes from "prop-types";
+import Link from "next/link";
 
 import closeSvg from "root/assets/close.svg?include";
 import Themes from "root/components/Themes";
@@ -17,17 +18,23 @@ const Overlay = ({ isOpen, onClose }) => (
 
     <div className={styles.content}>
       <ul className={styles.links}>
-        <a className={styles.link} href="/">
-          {content.about}
-        </a>
+        <Link href="/">
+          <a className={styles.link} href="/">
+            {content.about}
+          </a>
+        </Link>
 
-        <a className={styles.link} href="/faqs">
-          {content.faq}
-        </a>
+        <Link href="/faqs">
+          <a className={styles.link} href="/faqs">
+            {content.faq}
+          </a>
+        </Link>
 
-        <a className={styles.link} href="/transparency">
-          {content.transparency}
-        </a>
+        <Link href="/transparency">
+          <a className={styles.link} href="/transparency">
+            {content.transparency}
+          </a>
+        </Link>
       </ul>
       <div className={styles.contacts}>
         <p className={styles.label}>Contacte-nos</p>
