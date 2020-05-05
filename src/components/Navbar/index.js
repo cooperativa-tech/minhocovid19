@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 import openSvg from "root/assets/open.svg?include";
 import Logo from "root/components/Logo";
@@ -15,7 +16,7 @@ const options = {
   threshold: [0, 1.0],
 };
 
-const Navbar = () => {
+const Navbar = ({ home }) => {
   const [fixed, setFixed] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const observer = useRef(null);
@@ -50,13 +51,14 @@ const Navbar = () => {
             <SvgIncluder svg={openSvg} />
           </button>
         )}
-        <div className={styles.logo}>
-          <Logo width="auto" title={!fixed} />
+
+        <div className={`${styles.logo} ${home ? styles.home : ""}`}>
+          <Logo width="auto" title={home ? !fixed : false} />
         </div>
 
         <ul className={styles.links}>
           <li className={styles.link}>
-            <NavLink href="/">{content.about}</NavLink>
+            <NavLink href="/about">{content.about}</NavLink>
           </li>
           <li className={styles.link}>
             <NavLink href="/faqs">{content.faq}</NavLink>
@@ -71,6 +73,14 @@ const Navbar = () => {
       </div>
     </nav>
   );
+};
+
+Navbar.defaultProps = {
+  home: false,
+};
+
+Navbar.propTypes = {
+  home: PropTypes.bool,
 };
 
 export default Navbar;

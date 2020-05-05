@@ -72,6 +72,32 @@
 }
 
 .logo {
+  width: 77px;
+
+  @media (width < $Breakpoint-mobile) {
+    position: absolute;
+    top: unset;
+    bottom: -50%;
+    left: 50%;
+
+    width: $size-64;
+
+    transform: translateX(-50%);
+  }
+
+  @media (width < $Breakpoint-tablet) and (width >= $Breakpoint-mobile) {
+    position: absolute;
+    top: unset;
+    bottom: -100%;
+    left: 50%;
+
+    width: $size-112;
+
+    transform: translateX(-50%);
+  }
+}
+
+.logo.home {
   position: absolute;
   top: $size-64;
   z-index: 1;

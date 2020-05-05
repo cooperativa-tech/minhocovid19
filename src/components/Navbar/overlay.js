@@ -17,7 +17,7 @@ const Overlay = ({ isOpen, onClose }) => (
 
     <div className={styles.content}>
       <ul className={styles.links}>
-        <a className={styles.link} href="/">
+        <a className={styles.link} href="/about">
           {content.about}
         </a>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Navbar from "root/components/Navbar";
 import Footer from "root/components/Footer";
 import HomeHero from "root/sections/HomeHero";
 import Layout from "root/components/Layout";
@@ -22,6 +23,8 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
       description={content.description}
       keywords={content.keywords}
     >
+      <Navbar home />
+
       <HomeHero />
 
       <div className={styles.sections}>
