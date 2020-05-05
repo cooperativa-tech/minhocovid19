@@ -18,8 +18,8 @@ export default function HomeInstitutions() {
       </div>
 
       <div>
-        {content.institutionsList.map((institution) => (
-          <div className={styles.institution}>
+        {content.institutionsList.map((institution, index) => (
+          <div key={index} className={styles.institution}>
             <Text theme={Themes.greyishBlue}>{institution.name}</Text>
           </div>
         ))}

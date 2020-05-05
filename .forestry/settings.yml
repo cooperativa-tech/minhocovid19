@@ -1,12 +1,15 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: document
   path: cms/components/navbar.json
   label: Navbar
+- type: document
+  path: cms/components/footer.json
+  label: Footer
 - type: document
   path: cms/pages/index.json
   label: Home Page
