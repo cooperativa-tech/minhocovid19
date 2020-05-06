@@ -1,17 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Link from "next/link";
 import logoSvg from "root/assets/logo.svg?include";
 import SvgIncluder from "root/components/SvgIncluder";
 
 import styles from "./index.module.css";
 
 const Logo = ({ width, title }) => (
-  <SvgIncluder
-    width={width}
-    svg={logoSvg}
-    className={title ? "" : styles.noTitle}
-  />
+  <Link href="/">
+    <a href="/" aria-label="Homepage">
+      <SvgIncluder
+        width={width}
+        svg={logoSvg}
+        className={title ? "" : styles.noTitle}
+      />
+    </a>
+  </Link>
 );
 
 Logo.propTypes = {

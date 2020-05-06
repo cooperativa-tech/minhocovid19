@@ -1,0 +1,53 @@
+@import "../../styles/settings.css";
+
+.root {
+  padding-bottom: $size-20;
+
+  border-bottom: 1px solid $color-neon-carrot;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle,
+.toggle:focus,
+.toggle:active {
+  min-width: 22px;
+  padding: 0;
+  margin-left: $size-32;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle.open {
+  transform: rotate(-90deg);
+}
+
+.content {
+  margin-top: $size-20;
+
+  p:not(:last-child) {
+    margin-bottom: $size-20;
+  }
+}
+
+.content.hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(1px, 1px, 1px, 1px);
+
+  white-space: nowrap;
+}

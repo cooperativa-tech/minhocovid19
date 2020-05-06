@@ -13,6 +13,7 @@
   "dependencies": {
     "airtable": "^0.8.1",
     "imagemin-svgo": "^7.1.0",
+    "lodash.uniqueid": "^4.0.1",
     "next": "^9.3.4",
     "next-optimized-images": "^2.5.7",
     "normalize.css": "^8.0.1",
