@@ -16,7 +16,7 @@ const RENDERERS = {
   ),
   text: ({ children }) => children,
   link: ({ href, children }) => (
-    <Link href={href} external>
+    <Link href={href} external animate={false}>
       {children}
     </Link>
   ),

@@ -7,14 +7,12 @@
   flex-direction: row;
   align-items: center;
 
-  padding-bottom: $size-12;
+  padding-bottom: 4px;
 
   font-size: $size-20;
   line-height: $size-26;
 
   @media (width < $Breakpoint-mobile) {
-    padding-bottom: $size-8;
-
     font-size: $size-16;
     line-height: $size-20;
   }
@@ -37,6 +35,10 @@
   }
 }
 
+.animate {
+  padding-bottom: $size-8;
+}
+
 .underline {
   position: absolute;
   bottom: 0;
@@ -50,12 +52,8 @@
   transform: translateY(0px);
 
   transition: transform 0.3s ease-in;
-
-  @media (width < $Breakpoint-mobile) {
-    bottom: 8px;
-  }
 }
 
-.root:hover .underline {
+.animate:hover .underline {
   transform: translateY(-$size-8);
 }
