@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
-import Navbar from "../Navbar";
 
 import styles from "./index.module.css";
 
@@ -13,8 +12,6 @@ function Layout({ title, description, keywords, children }) {
         <meta name="description" content={description} />
         {keywords && <meta name="keywords" content={keywords} />}
       </Head>
-
-      <Navbar />
 
       <main>{children}</main>
     </div>

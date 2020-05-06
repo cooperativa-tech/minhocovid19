@@ -1,0 +1,23 @@
+@import "../styles/settings.css";
+
+.root {
+  max-width: $ten-columns;
+  margin: 0 auto;
+}
+
+.section1 {
+  margin-top: $size-112;
+  margin-bottom: $size-48;
+}
+
+.section1Title {
+  margin-bottom: $size-26;
+}
+
+.section2 {
+  margin-bottom: $size-112;
+}
+
+.section2Title {
+  margin-bottom: $size-26;
+}

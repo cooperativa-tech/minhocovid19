@@ -1,0 +1,27 @@
+---
+label: About Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: TITLE
+- type: textarea
+  name: description
+  label: DESCRIPTION
+- type: text
+  name: keywords
+  label: KEYWORDS
+- type: textarea
+  name: section1Title
+  label: SECTION 1 TITLE
+- type: textarea
+  name: section1Content
+  label: SECTION 1 CONTENT
+- type: textarea
+  name: section2Title
+  label: SECTION 2 TITLE
+- type: textarea
+  name: section2Content
+  label: SECTION 2 CONTENT
+pages:
+- cms/pages/index.json
