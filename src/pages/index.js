@@ -48,7 +48,7 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
         </div>
       </div>
 
-      <div className={styles.newsletterMobile}>
+      <div className={styles.newsletterFallback}>
         <HomeNewsletter />
       </div>
 

@@ -6,8 +6,8 @@ import SvgIncluder from "../SvgIncluder";
 
 import styles from "./index.module.css";
 
-const renderInnerAnchor = (icon, href, children) => (
-  <div className={styles.root}>
+const renderInnerAnchor = (icon, href, animate, children) => (
+  <div className={`${styles.root} ${animate ? styles.animate : ""}`}>
     {icon && (
       <span className={styles.icon}>
         <SvgIncluder svg={icon} width="100%" height="100%" />
@@ -20,21 +20,25 @@ const renderInnerAnchor = (icon, href, children) => (
   </div>
 );
 
-const Link = ({ icon, href, children, external }) =>
+const Link = ({ icon, href, animate, children, external }) =>
   external ? (
-    renderInnerAnchor(icon, href, children)
+    renderInnerAnchor(icon, href, animate, children)
   ) : (
-    <NextLink href={href}>{renderInnerAnchor(icon, href, children)}</NextLink>
+    <NextLink href={href}>
+      {renderInnerAnchor(icon, href, animate, children)}
+    </NextLink>
   );
 
 Link.defaultProps = {
   icon: null,
   external: false,
+  animate: true,
 };
 
 Link.propTypes = {
   icon: PropTypes.string,
   href: PropTypes.string.isRequired,
+  animate: PropTypes.bool,
   children: PropTypes.node.isRequired,
   external: PropTypes.bool,
 };

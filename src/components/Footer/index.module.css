@@ -6,6 +6,10 @@
   padding: 0 $size-64;
   margin: $size-112 0;
 
+  @media (width < $Breakpoint-tablet) {
+    padding: 0 $size-36;
+  }
+
   @media (width < $Breakpoint-mobile) {
     padding: 0 $gutter;
     margin: $size-32 0;
