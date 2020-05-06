@@ -30,8 +30,8 @@ fields:
   name: cta1Title
   label: CTA 1 TITLE
 - type: textarea
-  name: cta1Subtitle
-  label: CTA 1 SUBTITLE
+  name: cta1Content
+  label: CTA 1 CONTENT
 - type: text
   name: cta1Action
   label: CTA 1 ACTION
@@ -39,8 +39,8 @@ fields:
   name: cta2Title
   label: CTA 2 TITLE
 - type: textarea
-  name: cta2Subtitle
-  label: CTA 2 SUBTITLE
+  name: cta2Content
+  label: CTA 2 CONTENT
 - type: text
   name: cta2Action
   label: CTA 2 ACTION
@@ -59,9 +59,9 @@ fields:
       required: true
     label: Title
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: INSTITUTIONS LIST
 - type: text
   name: newsletterTitle

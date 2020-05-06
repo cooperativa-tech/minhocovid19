@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "root/components/Section";
 import SmallTitle from "root/components/SmallTitle";
-import Text from "root/components/Text";
+import TextArea from "root/components/TextArea";
 import Themes from "root/components/Themes";
 import Button from "root/components/Button";
 
@@ -16,7 +16,7 @@ export default function HomeCallToAction() {
         <SmallTitle theme={Themes.sweetBrown}>{content.cta1Title}</SmallTitle>
 
         <div className={styles.description}>
-          <Text theme={Themes.red}>{content.cta1Subtitle}</Text>
+          <TextArea theme={Themes.red}>{content.cta1Content}</TextArea>
         </div>
 
         <Button theme={Themes.red}>{content.cta1Action}</Button>
@@ -27,7 +27,9 @@ export default function HomeCallToAction() {
           <SmallTitle theme={Themes.neonCarrot}>{content.cta2Title}</SmallTitle>
 
           <div className={styles.description}>
-            <Text theme={Themes.goldYellow}>{content.cta2Subtitle}</Text>
+            <TextArea theme={Themes.goldYellow}>
+              {content.cta2Content}
+            </TextArea>
           </div>
 
           <Button theme={Themes.neonCarrot}>{content.cta2Action}</Button>
