@@ -5,14 +5,23 @@ import NextLink from "next/link";
 import Themes from "../Themes";
 import styles from "./index.module.css";
 
-const Button = ({ theme, href, children, type, onClick }) => {
+const Button = ({ theme, href, external, children, type, onClick }) => {
   const className = `${styles.root} ${styles[theme]}`;
 
   if (href) {
+    if (external) {
+      return (
+        <a className={className} href={href}>
+          {children}
+        </a>
+      );
+    }
+
     return (
       <NextLink href={href}>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a className={className}>{children}</a>
+        <a className={className} href={href}>
+          {children}
+        </a>
       </NextLink>
     );
   }
@@ -27,6 +36,7 @@ const Button = ({ theme, href, children, type, onClick }) => {
 
 Button.propTypes = {
   href: PropTypes.string,
+  external: PropTypes.bool,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
   theme: PropTypes.oneOf([Themes.red, Themes.neonCarrot, Themes.white])
@@ -36,6 +46,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   href: null,
+  external: false,
   onClick: null,
   type: "button",
 };

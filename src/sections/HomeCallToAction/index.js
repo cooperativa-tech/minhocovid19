@@ -19,7 +19,9 @@ export default function HomeCallToAction() {
           <TextArea theme={Themes.red}>{content.cta1Content}</TextArea>
         </div>
 
-        <Button theme={Themes.red}>{content.cta1Action}</Button>
+        <Button href={content.cta1Link} external theme={Themes.red}>
+          {content.cta1Action}
+        </Button>
       </Section>
 
       <div className={styles.needHelpSection}>
@@ -30,7 +32,9 @@ export default function HomeCallToAction() {
             <TextArea theme={Themes.goldYellow}>{content.cta2Content}</TextArea>
           </div>
 
-          <Button theme={Themes.neonCarrot}>{content.cta2Action}</Button>
+          <Button href={content.cta2Link} external theme={Themes.neonCarrot}>
+            {content.cta2Action}
+          </Button>
         </Section>
       </div>
     </div>
