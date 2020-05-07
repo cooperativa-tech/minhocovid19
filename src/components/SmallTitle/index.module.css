@@ -22,6 +22,10 @@
   color: $color-neon-carrot;
 }
 
+.goldYellowTheme {
+  color: $color-gold-yellow;
+}
+
 .greyishBlueTheme {
   color: $color-greyish-blue;
 }

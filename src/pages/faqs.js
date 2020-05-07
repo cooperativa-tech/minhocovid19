@@ -2,7 +2,10 @@ import React from "react";
 
 import content from "cms/pages/faqs.json";
 import Layout from "root/components/Layout";
-import FaqsList from "root/sections/FaqsList";
+import Navbar from "root/components/Navbar";
+import Faq from "root/components/Faq";
+
+import styles from "./faqs.module.css";
 
 export default function FaqsPage() {
   return (
@@ -11,8 +14,14 @@ export default function FaqsPage() {
       description={content.description}
       keywords={content.keywords}
     >
-      <div style={{ marginTop: "200px" }}>
-        <FaqsList />
+      <Navbar />
+
+      <div className={styles.faqs}>
+        {content.faqs.map((faq, index) => (
+          <div className={styles.faq}>
+            <Faq key={index} {...faq} />
+          </div>
+        ))}
       </div>
     </Layout>
   );

@@ -1,0 +1,14 @@
+@import "../styles/settings.css";
+
+.faqs {
+  max-width: $ten-columns;
+  margin: $size-112 auto;
+
+  @include Breakpoint-mobileOnly {
+    margin: $size-64 0;
+  }
+}
+
+.faq:not(:last-child) {
+  margin-bottom: $size-26;
+}

@@ -4,16 +4,84 @@
   "keywords": "minho,covid,guimarães,braga",
   "faqs": [
     {
-      "content": "Lorem Ipsum Badjerans",
-      "title": "Example one"
+      "title": "Como posso contribuir?",
+      "content": "Pode contribuir com doações de material de proteção individual (máscaras, viseiras, fatos de proteção, batas, aventais, cógulas, punhos, luvas, etc), bens essenciais, matérias-primas ou capacidade de produção. É, também, possível contribuir financeiramente para ajudar o desenvolvimento e compra de materiais."
     },
     {
-      "title": "Example two",
-      "content": "Lorem Ipsum Badjerones"
+      "title": "Que materiais posso doar?",
+      "content": "Pode doar materiais de proteção individual (máscaras, viseiras, fatos de proteção, batas, aventais, cógulas, punhos, luvas, etc), itens de higiene pessoal (escova e pasta de dentes, champô, gel de banho, sabonete, etc), roupa de cama (lençóis, cobertores), bens essenciais e matérias-primas para a produção de equipamentos de proteção."
     },
     {
-      "title": "Example three (has a link)",
+      "title": "Existe valor mínimo para as doações monetárias?",
+      "content": "Sim. O valor mínimo para as doações em dinheiro é de 1€."
+    },
+    {
+      "title": "Como será usado o dinheiro angariado?",
+      "content": "Todo o dinheiro angariado será utilizado para adquirir equipamento de proteção e bens essenciais que estejam em falta nas instituições e que não seja possível obter através de doações. O dinheiro pode também ser utilizado para a compra de matérias-primas e/ou apoio à produção dos materiais referidos anteriormente."
+    },
+    {
+      "title": "Que garantias tenho de que os materiais doados serão oferecidos às instituições?",
       "content": "Os nossos voluntários entregam, diariamente, os materiais que recebemos às instituições que nos enviam os pedidos. Nenhum dos materiais oferecidos será comercializado pelo Minho Covid-19. Pode consultar todas as doações efetuadas e correspondentes entregas feitas até ao momento no nosso relatório de transparência, [aqui](/transparency)."
+    },
+    {
+      "title": "Emitem alguma fatura de doação?",
+      "content": "Sim, basta solicitá-la a um dos nossos voluntários ou por e-mail."
+    },
+    {
+      "title": "Quem pode solicitar ajuda?",
+      "content": "Todos podem solicitar ajuda, mas a prioridade do Minho Covid-19 será distribuir materiais de proteção e bens essenciais às instituições que contribuem diretamente para o combate e prevenção da propagação da infeção ou que estejam em contacto direto com grupos de risco (hospitais, centros de saúde, enfermarias, bombeiros, instituições de solidariedade social, lares de idosos, etc)."
+    },
+    {
+      "title": "Não pertenço a uma instituição. Posso solicitar ajuda?",
+      "content": "Sim. Estabelecimentos comerciais e pessoas individuais podem solicitar ajuda, no entanto será sempre dada prioridade a instituições de saúde e instituições sociais."
+    },
+    {
+      "title": "Como posso solicitar ajuda?",
+      "content": "Todos os pedidos devem ser feitos através do formulário direcionado para as instituições/pedidos, que se encontra no site."
+    },
+    {
+      "title": "Existem limites nos pedidos de necessidades?",
+      "content": "Não. No formulário, pode indicar todas as suas necessidades e não há limite máximo para as mesmas."
+    },
+    {
+      "title": "Já fiz um pedido. Posso fazer outro?",
+      "content": "Sim. Pode fazer os pedidos que necessitar basta preencher novamente este formulário (colocar em hiperligação). Sempre que submete o formulário, faz um novo pedido."
+    },
+    {
+      "title": "O que posso solicitar no meu pedido?",
+      "content": "Neste momento, aceitamos pedidos de materiais de proteção individual (máscaras, viseiras, fatos de proteção, batas, aventais, cógulas, punhos, etc) e de bens essenciais (lençóis, itens de higiene pessoal, etc)."
+    },
+    {
+      "title": "Posso solicitar apoio financeiro?",
+      "content": "Não. O Minho Covid-19 não presta apoio financeiro às organizações, apenas fornecemos equipamento de proteção e bens essenciais. "
+    },
+    {
+      "title": "Como posso levantar o meu pedido?",
+      "content": "Não é necessário levantar o seu pedido. Temos uma rede de voluntários dedicada à entrega das encomendas."
+    },
+    {
+      "title": "Como fazem a gestão e distribuição dos pedidos?",
+      "content": "A gestão e distribuição dos pedidos é feita mediante ordem de chegada e é dada prioridade às entidades de saúde (Hospitais e Centros de saúde), bombeiros, instituições de solidariedade social e lares de idosos, por esta ordem. Os pedidos são entregues mediante a disponibilidade dos produtos solicitados."
+    },
+    {
+      "title": "Quanto tempo demoram a entregar os pedidos?",
+      "content": "O tempo de entrega dos pedidos varia consoante a disponibilidade dos produtos solicitados. Quando existe disponibilidade, as entregas são feitas em 1 a 2 dias."
+    },
+    {
+      "title": "Fazem entregas mesmo para zonas fora do Minho?",
+      "content": "Sim. Neste momento, fazemos essencialmente entregas em toda a região Norte do país, mas também já conseguimos mobilizar esforços para fazer chegar ajudas a outros sítios (Figueira-da-Foz, é um dos exemplos). Sempre que nos seja possível, queremos poder ajudar e chegar sempre a mais pessoas e sítios."
+    },
+    {
+      "title": "Como garantimos que os equipamentos comprados têm a melhor relação Qualidade vs Preço?",
+      "content": "O Minho Covid-19 não tem qualquer interesse comercial nos processos de aquisição de equipamentos. O nosso objetivo é que a relação qualidade/preço seja a mais justa possível, pois só assim poderemos garantir auxílio ao maior número de pessoas. Nesse sentido, analisaremos diferentes propostas de vários fornecedores antes da aquisição de qualquer material."
+    },
+    {
+      "title": "Como são feitas as escolhas de materiais a comprar?",
+      "content": "Através dos pedidos realizados, é feito um levantamento das necessidades e avaliada a sua urgência. "
+    },
+    {
+      "title": "O que farão ao dinheiro angariado caso sobre?",
+      "content": "Existirá sempre forma de ajudar as instituições com a aquisição de outros equipamentos e bens que necessitem."
     }
   ]
 }

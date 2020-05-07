@@ -21,6 +21,7 @@ SmallTitle.propTypes = {
   theme: PropTypes.oneOf([
     Themes.blue,
     Themes.neonCarrot,
+    Themes.goldYellow,
     Themes.greyishBlue,
     Themes.red,
     Themes.sweetBrown,
