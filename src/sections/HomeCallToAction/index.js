@@ -27,9 +27,7 @@ export default function HomeCallToAction() {
           <SmallTitle theme={Themes.neonCarrot}>{content.cta2Title}</SmallTitle>
 
           <div className={styles.description}>
-            <TextArea theme={Themes.goldYellow}>
-              {content.cta2Content}
-            </TextArea>
+            <TextArea theme={Themes.goldYellow}>{content.cta2Content}</TextArea>
           </div>
 
           <Button theme={Themes.neonCarrot}>{content.cta2Action}</Button>
