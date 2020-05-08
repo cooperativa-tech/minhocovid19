@@ -8,15 +8,15 @@ import styles from "./index.module.css";
 const Button = ({ theme, href, external, children, type, onClick }) => {
   const className = `${styles.root} ${styles[theme]}`;
 
-  if (href) {
-    if (external) {
-      return (
-        <a className={className} href={href}>
-          {children}
-        </a>
-      );
-    }
+  if (href && external) {
+    return (
+      <a className={className} href={href}>
+        {children}
+      </a>
+    );
+  }
 
+  if (href) {
     return (
       <NextLink href={href}>
         <a className={className} href={href}>

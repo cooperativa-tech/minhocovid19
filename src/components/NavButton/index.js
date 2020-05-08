@@ -7,15 +7,15 @@ import styles from "./index.module.css";
 const NavButton = ({ href, external, children, onClick }) => {
   const className = `${styles.root} ${styles.text}`;
 
-  if (href) {
-    if (external) {
-      return (
-        <a className={className} href={href}>
-          {children}
-        </a>
-      );
-    }
+  if (href && external) {
+    return (
+      <a className={className} href={href}>
+        {children}
+      </a>
+    );
+  }
 
+  if (href) {
     return (
       <NextLink href={href}>
         <a className={className} href={href}>
