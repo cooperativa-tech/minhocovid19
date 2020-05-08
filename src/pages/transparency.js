@@ -34,15 +34,15 @@ export default function HomePage({ transparencyReport }) {
 
       <div className={styles.table}>
         <div className={styles.tableHeader}>
-          <th className={styles.dateCol}>
+          <div className={styles.dateCol}>
             <Text theme={Themes.greyishBlue}>Data</Text>
-          </th>
-          <th className={styles.purposeCol}>
+          </div>
+          <div className={styles.purposeCol}>
             <Text theme={Themes.greyishBlue}>Propósito</Text>
-          </th>
-          <th className={styles.valueCol}>
+          </div>
+          <div className={styles.valueCol}>
             <Text theme={Themes.greyishBlue}>Valor</Text>
-          </th>
+          </div>
         </div>
 
         {transparencyReport.map((reportLine, index) => (

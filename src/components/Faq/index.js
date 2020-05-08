@@ -5,10 +5,12 @@ import uniqueId from "lodash.uniqueid";
 
 import arrow from "root/assets/arrow.svg?include";
 import Link from "../Link";
+import NoScript from "../NoScript";
 import SmallTitle from "../SmallTitle";
 import SvgIncluder from "../SvgIncluder";
 import Text from "../Text";
 import Themes from "../Themes";
+import WithScript from "../WithScript";
 
 import styles from "./index.module.css";
 
@@ -39,28 +41,42 @@ function Faq({ title, content }) {
       <div className={styles.header}>
         <SmallTitle theme={Themes.goldYellow}>{title}</SmallTitle>
 
-        <button
-          className={`${styles.toggle} ${open ? styles.open : ""}`}
-          type="button"
-          onClick={toggleOpen}
-          aria-label="Expand"
-          aria-expanded={open}
-          aria-controls={contentId}
-        >
-          <SvgIncluder svg={arrow} />
-        </button>
+        <WithScript>
+          <button
+            className={`${styles.toggle} ${open ? styles.open : ""}`}
+            type="button"
+            onClick={toggleOpen}
+            aria-label="Expand"
+            aria-expanded={open}
+            aria-controls={contentId}
+          >
+            <SvgIncluder svg={arrow} />
+          </button>
+        </WithScript>
       </div>
 
-      <div
-        id={contentId}
-        className={`${styles.content} ${open ? "" : styles.hidden}`}
-      >
-        <ReactMarkdown
-          source={content}
-          allowedTypes={["emphasis", "strong", "paragraph", "link", "text"]}
-          renderers={RENDERERS}
-        />
-      </div>
+      <WithScript>
+        <div
+          id={contentId}
+          className={`${styles.content} ${open ? "" : styles.hidden}`}
+        >
+          <ReactMarkdown
+            source={content}
+            allowedTypes={["emphasis", "strong", "paragraph", "link", "text"]}
+            renderers={RENDERERS}
+          />
+        </div>
+      </WithScript>
+
+      <NoScript>
+        <div className={styles.content}>
+          <ReactMarkdown
+            source={content}
+            allowedTypes={["emphasis", "strong", "paragraph", "link", "text"]}
+            renderers={RENDERERS}
+          />
+        </div>
+      </NoScript>
     </div>
   );
 }
