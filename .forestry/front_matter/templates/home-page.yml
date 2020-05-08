@@ -33,8 +33,17 @@ fields:
   name: cta1Content
   label: CTA 1 CONTENT
 - type: text
-  name: cta1Action
+  name: cta1ActionMoney
   label: CTA 1 ACTION
+- type: text
+  name: cta1ActionMoneyLink
+  label: CTA 1 ACTION LINK
+- type: text
+  name: cta1ActionMaterial
+  label: CTA 1 ACTION
+- type: text
+  name: cta1ActionMaterialLink
+  label: CTA 1 ACTION LINK
 - type: text
   name: cta2Title
   label: CTA 2 TITLE
@@ -44,6 +53,9 @@ fields:
 - type: text
   name: cta2Action
   label: CTA 2 ACTION
+- type: text
+  name: cta2Link
+  label: CTA 2 LINK
 - type: text
   name: institutionsTitle
   label: INSTITUTIONS TITLE

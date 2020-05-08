@@ -10,7 +10,7 @@ const Button = ({ theme, href, external, children, type, onClick }) => {
 
   if (href && external) {
     return (
-      <a className={className} href={href}>
+      <a className={className} href={href} onClick={onClick}>
         {children}
       </a>
     );
@@ -19,7 +19,7 @@ const Button = ({ theme, href, external, children, type, onClick }) => {
   if (href) {
     return (
       <NextLink href={href}>
-        <a className={className} href={href}>
+        <a className={className} href={href} onClick={onClick}>
           {children}
         </a>
       </NextLink>
