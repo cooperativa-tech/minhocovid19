@@ -84,3 +84,19 @@
     width: calc(100% / 3);
   }
 }
+
+.institutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($two-columns, 1fr));
+  row-gap: $size-36;
+  column-gap: $size-26;
+  max-width: $ten-columns;
+  margin: 0 auto;
+
+  @media (width < $Breakpoint-tablet) {
+    max-width: 100%;
+  }
+}
+
+.institution {
+}

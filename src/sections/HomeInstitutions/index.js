@@ -1,6 +1,7 @@
 import React from "react";
 
 import content from "cms/pages/index.json";
+import Link from "root/components/Link";
 import SmallTitle from "root/components/SmallTitle";
 import Text from "root/components/Text";
 import Themes from "root/components/Themes";
@@ -23,6 +24,12 @@ export default function HomeInstitutions() {
             <Text theme={Themes.greyishBlue}>{institution.name}</Text>
           </div>
         ))}
+      </div>
+
+      <div className={styles.link}>
+        <Link href="/transparency#institutions">
+          {content.institutionsAction}
+        </Link>
       </div>
     </Section>
   );

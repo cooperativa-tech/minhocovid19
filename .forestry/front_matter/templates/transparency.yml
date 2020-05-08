@@ -17,5 +17,24 @@ fields:
 - type: textarea
   name: heroContent
   label: HERO CONTENT
+- type: text
+  name: institutionsTitle
+  label: INSTITUTIONS TITLE
+- type: textarea
+  name: institutionsContent
+  label: INSTITUTIONS CONTENT
+- name: institutionsList
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Title
+  config:
+    min:
+    max:
+    labelField:
+  label: INSTITUTIONS LIST
 pages:
 - cms/pages/transparency.json

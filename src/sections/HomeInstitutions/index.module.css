@@ -12,3 +12,11 @@
 .institution {
   margin-top: $size-26;
 }
+
+.link {
+  margin-top: $size-64;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-36;
+  }
+}

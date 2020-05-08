@@ -58,6 +58,26 @@ export default function HomePage({ transparencyReport }) {
             </div>
           </span>
         ))}
+
+        <div className={styles.hero}>
+          <Section id="institutions" theme={Themes.lightBlue}>
+            <div className={styles.heroTitle}>
+              <Title theme={Themes.blue}>{content.institutionsTitle}</Title>
+            </div>
+
+            <TextArea theme={Themes.greyishBlue}>
+              {content.institutionsCopy}
+            </TextArea>
+          </Section>
+        </div>
+
+        <div className={styles.institutions}>
+          {content.institutionsList.map((institution, index) => (
+            <div key={index} className={styles.institution}>
+              <Text theme={Themes.blue}>{institution.name}</Text>
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   );

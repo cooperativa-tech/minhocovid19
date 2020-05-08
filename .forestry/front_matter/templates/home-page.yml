@@ -64,6 +64,9 @@ fields:
     labelField:
   label: INSTITUTIONS LIST
 - type: text
+  name: institutionsAction
+  label: INSTITUTIONS ACTION
+- type: text
   name: newsletterTitle
   label: NEWSLETTER TITLE
 - type: text

@@ -16,7 +16,7 @@
   "cta2Link": "https://airtable.com/shrWAYQDE2ZpKOyVq",
   "cta2Action": "Preciso de ajuda",
   "institutionsTitle": "Quem já ajudamos?",
-  "institutionsSubtitle": "Graças a si, MinhoCovid19 já conseguiu ajudar:",
+  "institutionsSubtitle": "Graças a si, MinhoCovid19 já conseguiu ajudar várias instituições, como por exemplo:",
   "institutionsList": [
     {
       "name": "Hospital de Braga"
@@ -34,6 +34,7 @@
       "name": "Centro Social Padre Manuel Joaquim de Sousa"
     }
   ],
+  "institutionsAction": "Consultar todas as instituições que já ajudamos",
   "newsletterTitle": "Quer receber boas notícias no seu email?",
   "newsletterSubtitle": "Prometemos não enviar spam!",
   "newsletterContactLabel": "Entre em contacto connosco",
