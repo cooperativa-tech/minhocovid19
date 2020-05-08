@@ -16,7 +16,8 @@
 .toggle,
 .toggle:focus,
 .toggle:active {
-  min-width: 22px;
+  width: 22px;
+  height: 22px;
   padding: 0;
   margin-left: $size-32;
 
