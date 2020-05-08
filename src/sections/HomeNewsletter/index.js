@@ -33,7 +33,7 @@ export default function HomeNewsletter() {
         href={`mailto:${content.newsletterContactEmail}`}
         external
       >
-        minhocovid19@aaum.pt
+        {content.newsletterContactEmail}
       </Link>
     </Section>
   );

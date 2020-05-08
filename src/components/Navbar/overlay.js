@@ -44,8 +44,8 @@ const Overlay = ({ isOpen, onClose }) => (
       </ul>
       <div className={styles.contacts}>
         <p className={styles.label}>Contacte-nos</p>
-        <a className={styles.contact} href="mailto:minhocovid@aaum.pt">
-          minhocovid@aaum.pt
+        <a className={styles.contact} href="mailto:minhocovid19@aaum.pt">
+          minhocovid19@aaum.pt
         </a>
         <div className={styles.phone}>
           <a className={styles.contact} href="tel:914553932">
