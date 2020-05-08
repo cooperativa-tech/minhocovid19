@@ -67,7 +67,9 @@ const Navbar = ({ home }) => {
             <NavLink href="/transparency">{content.transparency}</NavLink>
           </li>
           <li className={styles.link}>
-            <NavButton href="/">{content.cta}</NavButton>
+            <NavButton href={content.ctaLink} external>
+              {content.cta}
+            </NavButton>
           </li>
         </ul>
       </div>

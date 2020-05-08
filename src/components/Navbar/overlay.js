@@ -58,8 +58,8 @@ const Overlay = ({ isOpen, onClose }) => (
       </div>
     </div>
 
-    <Button theme={Themes.white} href="/">
-      Quero ajudar
+    <Button theme={Themes.white} href={content.ctaLink} external>
+      {content.cta}
     </Button>
   </div>
 );

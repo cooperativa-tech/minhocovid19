@@ -4,14 +4,23 @@ import NextLink from "next/link";
 
 import styles from "./index.module.css";
 
-const NavButton = ({ href, children, onClick }) => {
+const NavButton = ({ href, external, children, onClick }) => {
   const className = `${styles.root} ${styles.text}`;
+
+  if (href && external) {
+    return (
+      <a className={className} href={href}>
+        {children}
+      </a>
+    );
+  }
 
   if (href) {
     return (
       <NextLink href={href}>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a className={className}>{children}</a>
+        <a className={className} href={href}>
+          {children}
+        </a>
       </NextLink>
     );
   }
@@ -25,12 +34,14 @@ const NavButton = ({ href, children, onClick }) => {
 
 NavButton.propTypes = {
   href: PropTypes.string,
+  external: PropTypes.bool,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
 };
 
 NavButton.defaultProps = {
   href: null,
+  external: false,
   onClick: null,
 };
 
