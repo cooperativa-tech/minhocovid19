@@ -32,8 +32,8 @@ export default function FaqsPage() {
 
       <div className={styles.faqs}>
         {content.faqs.map((faq, index) => (
-          <div className={styles.faq}>
-            <Faq key={index} {...faq} />
+          <div key={index} className={styles.faq}>
+            <Faq {...faq} />
           </div>
         ))}
       </div>
