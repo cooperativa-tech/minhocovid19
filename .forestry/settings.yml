@@ -14,11 +14,14 @@ sections:
   path: cms/pages/index.json
   label: Home Page
 - type: document
-  path: cms/pages/kitchensink.json
-  label: Kitchen Sink
+  path: cms/pages/about.json
+  label: About
 - type: document
   path: cms/pages/faqs.json
   label: FAQs
+- type: document
+  path: cms/pages/transparency.json
+  label: Transparency Report
 upload_dir: cms/assets
 public_path: "/assets"
 front_matter_path: ''

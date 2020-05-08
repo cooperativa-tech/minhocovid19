@@ -26,7 +26,7 @@ export default function FaqsPage() {
             <Title theme={Themes.neonCarrot}>{content.heroTitle}</Title>
           </div>
 
-          <TextArea theme={Themes.goldYellow}>{content.heroCopy}</TextArea>
+          <TextArea theme={Themes.goldYellow}>{content.heroContent}</TextArea>
         </Section>
       </div>
 

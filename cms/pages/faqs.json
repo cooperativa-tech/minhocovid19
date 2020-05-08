@@ -3,7 +3,7 @@
   "description": "Perguntas e dúvidas frequentes sobre como pode ajudar, fazer um pedido de ajuda, e como se tornar parceiro do MinhoCovid19.",
   "keywords": "minho,covid,guimarães,braga",
   "heroTitle": "Perguntas Frequentes",
-  "heroCopy": "Recolhemos e respondemos às perguntas que mais frequentemente recebemos, para esclarecermos as dúvidas de forma rápida e eficaz.",
+  "heroContent": "Recolhemos e respondemos às perguntas que mais frequentemente recebemos, para esclarecermos as dúvidas de forma rápida e eficaz.",
   "faqs": [
     {
       "title": "Como posso contribuir?",

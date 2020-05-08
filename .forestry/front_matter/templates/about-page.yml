@@ -24,4 +24,4 @@ fields:
   name: section2Content
   label: SECTION 2 CONTENT
 pages:
-- cms/pages/index.json
+- cms/pages/about.json

@@ -21,8 +21,8 @@ fields:
   name: institutionsTitle
   label: INSTITUTIONS TITLE
 - type: textarea
-  name: institutionsContent
-  label: INSTITUTIONS CONTENT
+  name: institutionsCopy
+  label: INSTITUTIONS COPY
 - name: institutionsList
   type: field_group_list
   fields:

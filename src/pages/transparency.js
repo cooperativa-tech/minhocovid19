@@ -28,7 +28,7 @@ export default function HomePage({ transparencyReport }) {
             <Title theme={Themes.blue}>{content.heroTitle}</Title>
           </div>
 
-          <TextArea theme={Themes.greyishBlue}>{content.heroCopy}</TextArea>
+          <TextArea theme={Themes.greyishBlue}>{content.heroContent}</TextArea>
         </Section>
       </div>
 
