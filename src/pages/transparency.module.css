@@ -1,0 +1,86 @@
+@import "../styles/settings.css";
+
+.hero {
+  max-width: $twelve-columns;
+  margin: 0 auto;
+  margin-top: $size-112;
+  margin-bottom: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    margin: $size-64 0;
+  }
+}
+
+.heroTitle {
+  margin-bottom: $size-26;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  margin-bottom: $size-112;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-bottom: $size-64;
+  }
+}
+
+.tableHeader {
+  display: flex;
+  flex-direction: row;
+
+  text-align: left;
+
+  @media (width < $Breakpoint-mobile) {
+    width: 100%;
+  }
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  padding-top: $size-26;
+
+  @media (width < $Breakpoint-mobile) {
+    width: 100%;
+  }
+}
+
+.dateCol {
+  width: $two-columns;
+  margin-right: $column-spacing;
+
+  @media (width < $Breakpoint-mobile) {
+    width: calc(100% / 3);
+    margin-right: $gutter;
+  }
+}
+
+.purposeCol {
+  width: $four-columns;
+  margin-right: $column-spacing;
+
+  @media (width < $Breakpoint-tablet) {
+    width: $three-columns;
+  }
+
+  @media (width < $Breakpoint-mobile) {
+    width: calc(100% / 3);
+    margin-right: $gutter;
+  }
+}
+
+.valueCol {
+  width: $two-columns;
+
+  @media (width < $Breakpoint-tablet) {
+    width: $column-spacing;
+  }
+
+  @media (width < $Breakpoint-mobile) {
+    width: calc(100% / 3);
+  }
+}

@@ -15,6 +15,7 @@ Text.propTypes = {
     Themes.neonCarrot,
     Themes.goldYellow,
     Themes.greyishBlue,
+    Themes.blue,
   ]).isRequired,
 };
 

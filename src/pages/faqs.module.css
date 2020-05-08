@@ -1,10 +1,25 @@
 @import "../styles/settings.css";
 
+.hero {
+  max-width: $twelve-columns;
+  margin: 0 auto;
+  margin-top: $size-112;
+  margin-bottom: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    margin: $size-64 0;
+  }
+}
+
+.heroTitle {
+  margin-bottom: $size-26;
+}
+
 .faqs {
   max-width: $ten-columns;
   margin: $size-112 auto;
 
-  @include Breakpoint-mobileOnly {
+  @media (width < $Breakpoint-mobile) {
     margin: $size-64 0;
   }
 }

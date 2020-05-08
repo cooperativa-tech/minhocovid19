@@ -25,3 +25,7 @@
 .goldYellowTheme {
   color: $color-gold-yellow;
 }
+
+.blueTheme {
+  color: $color-blue;
+}
