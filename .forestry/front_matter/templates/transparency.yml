@@ -1,0 +1,21 @@
+---
+label: FAQ Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: TITLE
+- type: textarea
+  name: description
+  label: DESCRIPTION
+- type: text
+  name: keywords
+  label: KEYWORDS
+- type: text
+  name: heroTitle
+  label: HERO TITLE
+- type: textarea
+  name: heroContent
+  label: HERO CONTENT
+pages:
+- cms/pages/transparency.json
