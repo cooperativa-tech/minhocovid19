@@ -38,9 +38,9 @@ export default function AboutPage() {
             </SmallTitle>
           </div>
 
-          <TextArea theme={Themes.goldYellow}>
+          <MarkdownArea theme={Themes.goldYellow}>
             {content.section2Content}
-          </TextArea>
+          </MarkdownArea>
         </div>
       </div>
     </Layout>

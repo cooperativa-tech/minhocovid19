@@ -40,5 +40,31 @@
   "newsletterTitle": "Quer receber boas notícias no seu email?",
   "newsletterSubtitle": "Prometemos não enviar spam!",
   "newsletterContactLabel": "Entre em contacto connosco",
-  "newsletterContactEmail": "minhocovid19@aaum.pt"
+  "newsletterContactEmail": "minhocovid19@aaum.pt",
+  "stats": [
+    {
+      "quantity": 7427,
+      "material": "Viseiras"
+    },
+    {
+      "quantity": 5100,
+      "material": "Luvas"
+    },
+    {
+      "quantity": 420,
+      "material": "Manguitos"
+    },
+    {
+      "quantity": 325,
+      "material": "Fatos"
+    },
+    {
+      "quantity": 200,
+      "material": "Perneiras"
+    },
+    {
+      "quantity": 150,
+      "material": "Máscaras"
+    }
+  ]
 }

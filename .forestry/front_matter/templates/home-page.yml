@@ -26,6 +26,29 @@ fields:
 - type: textarea
   name: statsSubtitle
   label: STATS SUBTITLE
+- name: stats
+  type: field_group_list
+  fields:
+  - name: material
+    type: text
+    config:
+      required: false
+    label: material
+  - name: quantity
+    type: number
+    label: quantity
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: STATS
 - type: text
   name: cta1Title
   label: CTA 1 TITLE
