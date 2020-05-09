@@ -26,7 +26,7 @@ function HomeStats({ deliveredMaterial }) {
       />
 
       <div className={styles.link}>
-        <Link href="/">{content.statsAction}</Link>
+        <Link href="/transparency">{content.statsAction}</Link>
       </div>
     </Section>
   );

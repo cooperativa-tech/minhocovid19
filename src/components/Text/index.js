@@ -1,11 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
 import Themes from "../Themes";
 import styles from "./index.module.css";
 
-const Text = ({ children, theme }) => {
-  return <p className={`${styles.root} ${styles[theme]}`}>{children}</p>;
+const Text = ({ children, theme, weight }) => {
+  const className = classNames(styles.root, {
+    [styles[theme]]: true,
+    [styles[weight]]: true,
+  });
+
+  return <p className={className}>{children}</p>;
 };
 
 Text.propTypes = {
@@ -17,6 +23,11 @@ Text.propTypes = {
     Themes.greyishBlue,
     Themes.blue,
   ]).isRequired,
+  weight: PropTypes.oneOf(["normal", "bold"]),
+};
+
+Text.defaultProps = {
+  weight: "normal",
 };
 
 export default Text;

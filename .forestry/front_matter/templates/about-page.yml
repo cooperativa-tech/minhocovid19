@@ -17,11 +17,21 @@ fields:
 - type: textarea
   name: section1Content
   label: SECTION 1 CONTENT
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: textarea
   name: section2Title
   label: SECTION 2 TITLE
 - type: textarea
   name: section2Content
   label: SECTION 2 CONTENT
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
 pages:
 - cms/pages/about.json

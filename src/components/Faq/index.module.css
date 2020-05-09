@@ -36,10 +36,6 @@
 
 .content {
   margin-top: $size-20;
-
-  p:not(:last-child) {
-    margin-bottom: $size-20;
-  }
 }
 
 .content.hidden {

@@ -7,6 +7,7 @@ import SmallTitle from "root/components/SmallTitle";
 import TextArea from "root/components/TextArea";
 import Themes from "root/components/Themes";
 import Title from "root/components/Title";
+import MarkdownArea from "root/components/MarkdownArea";
 
 import styles from "./about.module.css";
 
@@ -25,9 +26,9 @@ export default function AboutPage() {
             <Title theme={Themes.neonCarrot}>{content.section1Title}</Title>
           </div>
 
-          <TextArea theme={Themes.goldYellow}>
+          <MarkdownArea theme={Themes.goldYellow}>
             {content.section1Content}
-          </TextArea>
+          </MarkdownArea>
         </div>
 
         <div className={styles.section2}>

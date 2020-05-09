@@ -1,32 +1,16 @@
 import React, { useState, useMemo } from "react";
 import PropTypes from "prop-types";
-import ReactMarkdown from "react-markdown";
 import uniqueId from "lodash.uniqueid";
 
 import arrow from "root/assets/arrow.svg?include";
-import Link from "../Link";
 import NoScript from "../NoScript";
 import SmallTitle from "../SmallTitle";
 import SvgIncluder from "../SvgIncluder";
-import Text from "../Text";
 import Themes from "../Themes";
 import WithScript from "../WithScript";
 
 import styles from "./index.module.css";
-
-/* eslint-disable react/prop-types */
-const RENDERERS = {
-  paragraph: ({ children }) => (
-    <Text theme={Themes.goldYellow}>{children}</Text>
-  ),
-  text: ({ children }) => children,
-  link: ({ href, children }) => (
-    <Link href={href} external animate={false}>
-      {children}
-    </Link>
-  ),
-};
-/* eslint-enable react/prop-types */
+import MarkdownArea from "../MarkdownArea";
 
 function Faq({ title, content }) {
   const contentId = useMemo(() => uniqueId(), []);
@@ -60,21 +44,13 @@ function Faq({ title, content }) {
           id={contentId}
           className={`${styles.content} ${open ? "" : styles.hidden}`}
         >
-          <ReactMarkdown
-            source={content}
-            allowedTypes={["emphasis", "strong", "paragraph", "link", "text"]}
-            renderers={RENDERERS}
-          />
+          <MarkdownArea theme={Themes.goldYellow}>{content}</MarkdownArea>
         </div>
       </WithScript>
 
       <NoScript>
         <div className={styles.content}>
-          <ReactMarkdown
-            source={content}
-            allowedTypes={["emphasis", "strong", "paragraph", "link", "text"]}
-            renderers={RENDERERS}
-          />
+          <MarkdownArea theme={Themes.goldYellow}>{content}</MarkdownArea>
         </div>
       </NoScript>
     </div>
