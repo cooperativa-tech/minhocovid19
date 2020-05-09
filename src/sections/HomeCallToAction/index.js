@@ -12,16 +12,30 @@ import styles from "./index.module.css";
 export default function HomeCallToAction() {
   return (
     <div className={styles.root}>
-      <Section theme={Themes.lightRed}>
+      <Section id="howtohelp" theme={Themes.lightRed}>
         <SmallTitle theme={Themes.sweetBrown}>{content.cta1Title}</SmallTitle>
 
         <div className={styles.description}>
           <TextArea theme={Themes.red}>{content.cta1Content}</TextArea>
         </div>
 
-        <Button href={content.cta1Link} external theme={Themes.red}>
-          {content.cta1Action}
-        </Button>
+        <div className={styles.actions}>
+          <Button
+            href={content.cta1ActionMoneyLink}
+            external
+            theme={Themes.red}
+          >
+            {content.cta1ActionMoney}
+          </Button>
+
+          <Button
+            href={content.cta1ActionMaterialLink}
+            external
+            theme={Themes.red}
+          >
+            {content.cta1ActionMaterial}
+          </Button>
+        </div>
       </Section>
 
       <div className={styles.needHelpSection}>
@@ -32,9 +46,11 @@ export default function HomeCallToAction() {
             <TextArea theme={Themes.goldYellow}>{content.cta2Content}</TextArea>
           </div>
 
-          <Button href={content.cta2Link} external theme={Themes.neonCarrot}>
-            {content.cta2Action}
-          </Button>
+          <div className={styles.actions}>
+            <Button href={content.cta2Link} external theme={Themes.neonCarrot}>
+              {content.cta2Action}
+            </Button>
+          </div>
         </Section>
       </div>
     </div>

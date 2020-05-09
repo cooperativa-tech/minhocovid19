@@ -15,6 +15,23 @@
   }
 }
 
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (width < $Breakpoint-tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.actions > *:last-child {
+  @media (width < $Breakpoint-tablet) {
+    margin-top: $size-26;
+  }
+}
+
 .needHelpSection {
   margin-top: $size-112;
 
