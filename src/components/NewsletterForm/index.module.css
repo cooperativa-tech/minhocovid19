@@ -74,15 +74,20 @@ $Breakpoint-smallMobile: 460px;
     padding-bottom: $size-16;
   }
 
-  @media (width < $Breakpoint-smallMobile) {
+  @media (width < $Breakpoint-tablet) {
     display: none;
   }
 }
 
 .smallMobileButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
   margin-top: $size-12;
 
-  @media (width >= $Breakpoint-smallMobile) {
+  @media (width >= $Breakpoint-tablet) {
     display: none;
   }
 }

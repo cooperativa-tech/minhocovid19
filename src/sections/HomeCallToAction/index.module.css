@@ -35,6 +35,10 @@
 .needHelpSection {
   margin-top: $size-112;
 
+  @media (width < $Breakpoint-tablet) {
+    margin-top: $size-64;
+  }
+
   @media (width < $Breakpoint-mobile) {
     margin-top: $size-32;
   }

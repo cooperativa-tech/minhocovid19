@@ -1,5 +1,5 @@
 ---
-label: FAQ Page
+label: Transparency Page
 hide_body: true
 fields:
 - type: text
@@ -32,9 +32,9 @@ fields:
       required: true
     label: Title
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: INSTITUTIONS LIST
 pages:
 - cms/pages/transparency.json

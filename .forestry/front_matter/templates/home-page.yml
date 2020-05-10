@@ -29,25 +29,25 @@ fields:
 - name: stats
   type: field_group_list
   fields:
-  - name: material
+  - name: label
     type: text
     config:
       required: false
-    label: material
-  - name: quantity
+    label: label
+  - name: value
     type: number
-    label: quantity
+    label: value
     description: ''
     default: 0
     required: true
     config:
-      min: 
-      max: 
-      step: 
+      min:
+      max:
+      step:
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: STATS
 - type: text
   name: cta1Title
@@ -94,9 +94,9 @@ fields:
       required: true
     label: Title
   config:
-    min: 
-    max: 
-    labelField: 
+    min:
+    max:
+    labelField:
   label: INSTITUTIONS LIST
 - type: text
   name: institutionsAction

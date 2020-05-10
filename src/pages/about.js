@@ -4,7 +4,6 @@ import content from "cms/pages/about.json";
 import Navbar from "root/components/Navbar";
 import Layout from "root/components/Layout";
 import SmallTitle from "root/components/SmallTitle";
-import TextArea from "root/components/TextArea";
 import Themes from "root/components/Themes";
 import Title from "root/components/Title";
 import MarkdownArea from "root/components/MarkdownArea";

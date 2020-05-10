@@ -14,6 +14,10 @@
   background: linear-gradient(94.99deg, #f9f1e5 13.96%, #f9f1e5 90.87%);
   border-radius: 128px;
 
+  @media (width < $Breakpoint-tablet) {
+    margin-bottom: 190px;
+  }
+
   @media (width < $Breakpoint-mobile) {
     padding: $size-84 $gutter $size-136 $gutter;
     margin-top: 0;

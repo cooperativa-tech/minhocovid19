@@ -43,28 +43,28 @@
   "newsletterContactEmail": "minhocovid19@aaum.pt",
   "stats": [
     {
-      "quantity": 7427,
-      "material": "Viseiras"
+      "value": 7427,
+      "label": "Viseiras"
     },
     {
-      "quantity": 5100,
-      "material": "Luvas"
+      "value": 5100,
+      "label": "Luvas"
     },
     {
-      "quantity": 420,
-      "material": "Manguitos"
+      "value": 420,
+      "label": "Manguitos"
     },
     {
-      "quantity": 325,
-      "material": "Fatos"
+      "value": 325,
+      "label": "Fatos"
     },
     {
-      "quantity": 200,
-      "material": "Perneiras"
+      "value": 200,
+      "label": "Perneiras"
     },
     {
-      "quantity": 150,
-      "material": "Máscaras"
+      "value": 150,
+      "label": "Máscaras"
     }
   ]
 }

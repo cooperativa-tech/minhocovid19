@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import Link from "root/components/Link";
 import Themes from "root/components/Themes";
@@ -12,7 +11,7 @@ import content from "cms/pages/index.json";
 
 import styles from "./index.module.css";
 
-function HomeStats({ deliveredMaterial }) {
+function HomeStats() {
   return (
     <Section theme={Themes.lightBlue}>
       <SmallTitle theme={Themes.blue}>{content.statsTitle}</SmallTitle>
@@ -21,9 +20,7 @@ function HomeStats({ deliveredMaterial }) {
         <Text theme={Themes.greyishBlue}>{content.statsSubtitle}</Text>
       </div>
 
-      <Stats
-        list={[{ label: "Material entregue", value: deliveredMaterial }]}
-      />
+      <Stats list={content.stats} />
 
       <div className={styles.link}>
         <Link href="/transparency">{content.statsAction}</Link>
@@ -31,9 +28,5 @@ function HomeStats({ deliveredMaterial }) {
     </Section>
   );
 }
-
-HomeStats.propTypes = {
-  deliveredMaterial: PropTypes.number.isRequired,
-};
 
 export default HomeStats;
