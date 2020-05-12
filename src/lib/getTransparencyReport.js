@@ -1,8 +1,6 @@
-const getConfig = require("next/config").default;
 const Airtable = require("airtable");
 
-const { serverRuntimeConfig } = getConfig();
-const base = new Airtable({ apiKey: serverRuntimeConfig.airtableApiKey }).base(
+const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
   "appRfyVnS31QfWePY"
 );
 
@@ -13,6 +11,7 @@ export default function getTransparencyReport() {
     base("Relatório de Transparência")
       .select({
         fields: ["Propósito", "Data", "Valor"],
+        sort: [{ field: "Data", direction: "asc" }],
       })
       .eachPage(
         function page(records, fetchNextPage) {
