@@ -5,6 +5,7 @@ import Section from "root/components/Section";
 import SmallTitle from "root/components/SmallTitle";
 import Themes from "root/components/Themes";
 import Text from "root/components/Text";
+import TextArea from "root/components/TextArea";
 import NewsletterForm from "root/components/NewsletterForm";
 import Link from "root/components/Link";
 import mail from "root/assets/email.svg?include";
@@ -25,7 +26,9 @@ export default function HomeNewsletter() {
       <NewsletterForm />
 
       <div className={styles.contactUs}>
-        <Text theme={Themes.goldYellow}> {content.newsletterContactLabel}</Text>
+        <TextArea theme={Themes.goldYellow}>
+          {content.newsletterContactLabel}
+        </TextArea>
       </div>
 
       <Link

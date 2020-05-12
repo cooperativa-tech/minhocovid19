@@ -107,7 +107,7 @@ fields:
 - type: text
   name: newsletterSubtitle
   label: NEWSLETTER SUBTITLE
-- type: text
+- type: textarea
   name: newsletterContactLabel
   label: NEWSLETTER CONTACT LABEL
 - type: text
