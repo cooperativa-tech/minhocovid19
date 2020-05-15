@@ -71,6 +71,10 @@
   margin-bottom: $size-36;
 }
 
+.link.selected {
+  border-bottom: 1px solid white;
+}
+
 .contacts {
   margin-top: $size-64;
 }

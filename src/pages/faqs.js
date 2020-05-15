@@ -18,7 +18,7 @@ export default function FaqsPage() {
       description={content.description}
       keywords={content.keywords}
     >
-      <Navbar />
+      <Navbar currentPage="/faqs" />
 
       <div className={styles.hero}>
         <Section theme={Themes.linen}>

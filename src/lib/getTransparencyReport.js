@@ -11,7 +11,7 @@ export default function getTransparencyReport() {
     base("Relatório de Transparência")
       .select({
         fields: ["Propósito", "Data", "Valor"],
-        sort: [{ field: "Data", direction: "asc" }],
+        sort: [{ field: "Data", direction: "desc" }],
       })
       .eachPage(
         function page(records, fetchNextPage) {

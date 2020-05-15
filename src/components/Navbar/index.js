@@ -7,6 +7,7 @@ import NavLink from "root/components/NavLink";
 import NavButton from "root/components/NavButton";
 import SvgIncluder from "root/components/SvgIncluder";
 import content from "cms/components/navbar.json";
+import { navLinksWithoutHome } from "./navLinks";
 import Overlay from "./overlay";
 
 import styles from "./index.module.css";
@@ -16,7 +17,7 @@ const options = {
   threshold: [0, 1.0],
 };
 
-const Navbar = ({ home }) => {
+const Navbar = ({ home, currentPage }) => {
   const [fixed, setFixed] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const observer = useRef(null);
@@ -40,7 +41,11 @@ const Navbar = ({ home }) => {
 
   return (
     <nav ref={navbar} className={className}>
-      <Overlay isOpen={isOpen} onClose={() => setOpen(false)} />
+      <Overlay
+        isOpen={isOpen}
+        onClose={() => setOpen(false)}
+        currentPage={currentPage}
+      />
       <div className={styles.content}>
         {!isOpen && (
           <button
@@ -57,15 +62,17 @@ const Navbar = ({ home }) => {
         </div>
 
         <ul className={styles.links}>
-          <li className={styles.link}>
-            <NavLink href="/about">{content.about}</NavLink>
-          </li>
-          <li className={styles.link}>
-            <NavLink href="/faqs">{content.faq}</NavLink>
-          </li>
-          <li className={styles.link}>
-            <NavLink href="/transparency">{content.transparency}</NavLink>
-          </li>
+          {navLinksWithoutHome.map((navLink) => (
+            <li className={styles.link} key={navLink.key}>
+              <NavLink
+                href={navLink.href}
+                selected={currentPage === navLink.href}
+              >
+                {navLink.label}
+              </NavLink>
+            </li>
+          ))}
+
           <li className={styles.link}>
             <NavButton href="/#howtohelp">{content.cta}</NavButton>
           </li>
@@ -81,6 +88,7 @@ Navbar.defaultProps = {
 
 Navbar.propTypes = {
   home: PropTypes.bool,
+  currentPage: PropTypes.string.isRequired,
 };
 
 export default Navbar;
