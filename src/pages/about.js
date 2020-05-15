@@ -17,7 +17,7 @@ export default function AboutPage() {
       description={content.description}
       keywords={content.keywords}
     >
-      <Navbar />
+      <Navbar currentPage="/about" />
 
       <div className={styles.root}>
         <div className={styles.section1}>

@@ -20,7 +20,7 @@ export default function HomePage({ transparencyReport }) {
       description={content.description}
       keywords={content.keywords}
     >
-      <Navbar />
+      <Navbar currentPage="/transparency" />
 
       <div className={styles.hero}>
         <Section theme={Themes.lightBlue}>
@@ -72,7 +72,7 @@ export default function HomePage({ transparencyReport }) {
         </div>
 
         <div className={styles.institutions}>
-          {content.institutionsList.map((institution, index) => (
+          {content.institutionsList.sort().map((institution, index) => (
             <div key={index} className={styles.institution}>
               <Text theme={Themes.blue}>{institution.name}</Text>
             </div>

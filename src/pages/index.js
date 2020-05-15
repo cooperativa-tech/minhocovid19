@@ -23,7 +23,7 @@ export default function HomePage({ totalDonations, deliveredMaterial }) {
       description={content.description}
       keywords={content.keywords}
     >
-      <Navbar home />
+      <Navbar home currentPage="/" />
 
       <HomeHero />
 

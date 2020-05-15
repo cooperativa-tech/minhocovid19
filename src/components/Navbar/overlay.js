@@ -1,5 +1,6 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
+import classNames from "classnames";
 import Link from "next/link";
 
 import closeSvg from "root/assets/close.svg?include";
@@ -9,8 +10,25 @@ import SvgIncluder from "root/components/SvgIncluder";
 import content from "cms/components/navbar.json";
 
 import styles from "./overlay.module.css";
+import { navLinks } from "./navLinks";
 
-const Overlay = ({ isOpen, onClose }) => (
+const renderLink = (navLink, currentPage) => {
+  const className = classNames(styles.link, {
+    [styles.selected]: currentPage === navLink.href,
+  });
+
+  return (
+    <li className={styles.link} key={navLink.key}>
+      <Link href={navLink.href}>
+        <a className={className} href={navLink.href}>
+          {navLink.label}
+        </a>
+      </Link>
+    </li>
+  );
+};
+
+const Overlay = ({ isOpen, onClose, currentPage }) => (
   <div className={`${styles.root} ${isOpen ? styles.isOpen : ""}`}>
     <button type="button" className={styles.close} onClick={onClose}>
       <SvgIncluder svg={closeSvg} />
@@ -18,29 +36,7 @@ const Overlay = ({ isOpen, onClose }) => (
 
     <div className={styles.content}>
       <ul className={styles.links}>
-        <Link href="/">
-          <a className={styles.link} href="/">
-            {content.homepage}
-          </a>
-        </Link>
-
-        <Link href="/about">
-          <a className={styles.link} href="/about">
-            {content.about}
-          </a>
-        </Link>
-
-        <Link href="/faqs">
-          <a className={styles.link} href="/faqs">
-            {content.faq}
-          </a>
-        </Link>
-
-        <Link href="/transparency">
-          <a className={styles.link} href="/transparency">
-            {content.transparency}
-          </a>
-        </Link>
+        {navLinks.map((navLink) => renderLink(navLink, currentPage))}
       </ul>
       <div className={styles.contacts}>
         <p className={styles.label}>Contacte-nos</p>
@@ -65,8 +61,9 @@ const Overlay = ({ isOpen, onClose }) => (
 );
 
 Overlay.propTypes = {
-  isOpen: Proptypes.bool.isRequired,
-  onClose: Proptypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  currentPage: PropTypes.string.isRequired,
 };
 
 export default Overlay;

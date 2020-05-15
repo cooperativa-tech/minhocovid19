@@ -22,7 +22,7 @@ function Faq({ title, content }) {
 
   return (
     <div className={styles.root}>
-      <div className={styles.header}>
+      <div className={styles.header} onClick={toggleOpen} role="presentation">
         <SmallTitle theme={Themes.goldYellow}>{title}</SmallTitle>
 
         <WithScript>
