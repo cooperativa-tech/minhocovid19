@@ -25,6 +25,7 @@
 }
 
 .icon {
+  width: $size-26;
   height: $size-26;
   margin-right: $size-20;
 
