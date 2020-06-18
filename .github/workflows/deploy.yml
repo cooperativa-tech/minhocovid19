@@ -9,7 +9,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger build hook
-        run: curl -X POST -d {} $NETLIFY_BUILD_HOOK
+      - uses: actions/checkout@v1
+      - name: Node CI
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Build website
+        run: yarn && yarn build
         env:
-          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+            GOODREADS_API_KEY: ${{ secrets.GOODREADS_API_KEY }}
+      - name: Upload to netlify
+        uses: netlify/actions/cli@master
+        with:
+            args: deploy --prod
+        env:
+            NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
