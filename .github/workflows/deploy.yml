@@ -5,19 +5,18 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  e2e:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v1
-      - name: Node CI
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - name: Build website
         run: yarn && yarn build
         env:
-            GOODREADS_API_KEY: ${{ secrets.GOODREADS_API_KEY }}
+            AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
       - name: Upload to netlify
         uses: netlify/actions/cli@master
         with:
