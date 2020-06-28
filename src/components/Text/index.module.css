@@ -30,6 +30,10 @@
   color: $color-blue;
 }
 
+.mineshaftTheme {
+  color: $color-mineshaft;
+}
+
 .normal {
   font-weight: 400;
 }

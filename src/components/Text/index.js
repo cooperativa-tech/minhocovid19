@@ -22,6 +22,7 @@ Text.propTypes = {
     Themes.goldYellow,
     Themes.greyishBlue,
     Themes.blue,
+    Themes.mineshaft,
   ]).isRequired,
   weight: PropTypes.oneOf(["normal", "bold"]),
 };
