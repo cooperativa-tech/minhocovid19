@@ -7,6 +7,7 @@ import SmallTitle from "root/components/SmallTitle";
 import Themes from "root/components/Themes";
 import Title from "root/components/Title";
 import MarkdownArea from "root/components/MarkdownArea";
+import AboutNews from "root/sections/AboutNews";
 
 import styles from "./about.module.css";
 
@@ -41,6 +42,10 @@ export default function AboutPage() {
             {content.section2Content}
           </MarkdownArea>
         </div>
+      </div>
+
+      <div className={styles.news}>
+        <AboutNews />
       </div>
     </Layout>
   );

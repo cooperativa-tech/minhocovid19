@@ -33,5 +33,41 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+- type: text
+  name: newsTitle
+  label: NEWS TITLE
+- type: text
+  name: newsContent
+  label: NEWS CONTENT
+- type: text
+  name: newsTitle
+  label: NEWS TITLE
+- name: news
+  type: field_group_list
+  fields:
+  - name: publisher
+    type: text
+    config:
+      required: true
+    label: label
+  - name: title
+    type: text
+    config:
+      required: true
+    label: title
+  - name: excerpt
+    type: text
+    config:
+      required: true
+    label: excerpt
+  - name: url
+    type: text
+    config:
+      required: true
+    label: url
+  config:
+    min: 2
+    max: 2
+  label: NEWS
 pages:
 - cms/pages/about.json

@@ -1,0 +1,118 @@
+@import "../../styles/settings.css";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (width < $Breakpoint-tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  max-width: calc($six-columns + $gutter);
+}
+
+.title {
+  margin-bottom: $size-26;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-bottom: $size-20;
+  }
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: $seven-columns;
+  min-width: $seven-columns;
+  margin-left: $column;
+
+  @media (width < $Breakpoint-tablet) {
+    margin-top: $size-48;
+    margin-left: 0;
+  }
+
+  @media (width < $Breakpoint-mobile) {
+    flex-direction: column;
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+.article {
+  max-width: calc($three-columns + $gutter);
+  padding: $size-48 $size-26;
+
+  background-color: white;
+
+  @media (width < $Breakpoint-mobile) {
+    max-width: calc($five-columns);
+    padding: $size-32 $size-26;
+  }
+}
+
+.article + .article {
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-26;
+  }
+}
+
+.articleTitle {
+  margin-top: $size-48;
+  margin-bottom: $size-20;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-26;
+  }
+}
+
+.articleSmallText * {
+  font-size: $size-16;
+  line-height: $size-20;
+
+  @media (width < $Breakpoint-mobile) {
+    font-size: $size-12;
+    line-height: $size-16;
+  }
+}
+
+.articleShare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $size-48;
+
+  @media (width < $Breakpoint-mobile) {
+    margin-top: $size-26;
+  }
+}
+
+.articleShareButton {
+  display: block;
+  padding: $size-20 $size-26;
+
+  background-color: transparent;
+  border: 1px solid $color-blue;
+  border-radius: 24px;
+  color: $color-blue;
+  cursor: pointer;
+
+  font-size: $size-16;
+  line-height: $size-20;
+
+  @media (width < $Breakpoint-mobile) {
+    padding: $size-16 $size-20;
+
+    border-radius: 20px;
+
+    font-size: $size-12;
+    line-height: $size-16;
+  }
+}

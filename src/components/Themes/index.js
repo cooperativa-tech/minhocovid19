@@ -9,4 +9,5 @@ export default {
   red: "redTheme",
   sweetBrown: "sweetBrownTheme",
   white: "whiteTheme",
+  mineshaft: "mineshaftTheme",
 };
