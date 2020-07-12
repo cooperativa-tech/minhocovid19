@@ -10,6 +10,7 @@ import Text from "../Text";
 
 import styles from "./index.module.css";
 import Themes from "../Themes";
+import NavLink from "../NavLink";
 
 export default function Footer() {
   return (
@@ -20,38 +21,46 @@ export default function Footer() {
         <Text theme={Themes.red}>{content.subtitle}</Text>
       </div>
 
-      <div className={styles.social}>
-        <div className={styles.socialItem}>
-          <a
-            href={content.facebookLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <SvgIncluder svg={facebook} />
-          </a>
+      <div className={styles.bottomRow}>
+        <div className={styles.social}>
+          <div className={styles.socialItem}>
+            <a
+              href={content.facebookLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <SvgIncluder svg={facebook} />
+            </a>
+          </div>
+
+          <div className={styles.socialItem}>
+            <a
+              href={content.instagramLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <SvgIncluder svg={instagram} />
+            </a>
+          </div>
+
+          <div className={styles.socialItem}>
+            <a
+              href={content.linkedinLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkedin"
+            >
+              <SvgIncluder svg={linkedin} />
+            </a>
+          </div>
         </div>
 
-        <div className={styles.socialItem}>
-          <a
-            href={content.instagramLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <SvgIncluder svg={instagram} />
-          </a>
-        </div>
+        <div className={styles.extraLinks}>
+          <NavLink href="/terms">Termos e Condições</NavLink>
 
-        <div className={styles.socialItem}>
-          <a
-            href={content.linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <SvgIncluder svg={linkedin} />
-          </a>
+          <NavLink href="/privacy">Política de Privacidade</NavLink>
         </div>
       </div>
     </section>

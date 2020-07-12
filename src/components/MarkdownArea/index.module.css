@@ -1,7 +1,60 @@
 @import "../../styles/settings.css";
 
 .root {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: $size-26;
+  }
+
   p:not(:last-child) {
     margin-bottom: $size-26;
   }
+
+  ol,
+  ul {
+    padding-left: $size-26;
+    margin-bottom: $size-26;
+  }
+
+  li + li {
+    margin-top: $size-8;
+  }
+
+  ol li::marker {
+    font-size: $size-20;
+    line-height: $size-26;
+
+    @media (width < $Breakpoint-mobile) {
+      font-size: $size-16;
+      line-height: $size-20;
+    }
+  }
+}
+
+.root.redTheme {
+  color: $color-cooper-red;
+}
+
+.root.neonCarrotTheme {
+  color: $color-neon-carrot;
+}
+
+.root.greyishBlueTheme {
+  color: $color-greyish-blue;
+}
+
+.root.goldYellowTheme {
+  color: $color-gold-yellow;
+}
+
+.root.blueTheme {
+  color: $color-blue;
+}
+
+.root.mineshaftTheme {
+  color: $color-mineshaft;
 }
