@@ -6,6 +6,18 @@
   "heroContent": "Recolhemos e respondemos às perguntas que mais frequentemente recebemos, para esclarecermos as dúvidas de forma rápida e eficaz.",
   "faqs": [
     {
+      "title": "Quem irá utilizar os dados que insiro na vossa plataforma?",
+      "content": "Todos os seus dados estão protegidos pelo Regime Geral de Proteção de Dados (RGPD). O MinhoCovid-19 é uma iniciativa sem fins lucrativos, e os seus dados recolhidos, não serão usados para fins comerciais. Visite a nossa [política de privacidade](/privacy) para mais informações."
+    },
+    {
+      "title": "Que projetos estão aliados ao Minho Covid-19?",
+      "content": "O primeiro projeto aliar-se ao Minho Covid-19 foi o Festival **40ena**, que consistiu no streaming de performances, ao longo de 1 dia, nas redes sociais. Esta iniciativa teve como finalidade aliar as artes, a cultura e o entretenimento à solidariedade. A primeira edição contou com 9 artistas, ao longo de 8h. Os fundos angariados nesta iniciativa foram entregues ao MinhoCovid-19."
+    },
+    {
+      "title": "Que tipo de projetos o Minho Covid-19 apoia?",
+      "content": "O MinhoCovid-19 não pretende focar-se apenas na produção, distribuição e entrega de materiais de proteção individual, mas quer também explorar novas parcerias que permitam sensibilizar e mobilizar a sociedade civil para a necessidade de apoiar um número revelador de profissionais, instituições e comunidades que subitamente se viram privados de rendimentos ou alimentos. Pretendemos envolver cada vez mais empresas, parceiros e municípios nesta missão da resolução de desafios sociais causados pela pandemia, também como fonte de apoio para a cultura e educação."
+    },
+    {
       "title": "Como posso contribuir?",
       "content": "Pode contribuir com doações de material de proteção individual (máscaras, viseiras, fatos de proteção, batas, aventais, cógulas, punhos, luvas, etc), bens essenciais, matérias-primas ou capacidade de produção. É, também, possível contribuir financeiramente para ajudar o desenvolvimento e compra de materiais."
     },
@@ -55,7 +67,15 @@
     },
     {
       "title": "Posso solicitar apoio financeiro?",
-      "content": "Não. O Minho Covid-19 não presta apoio financeiro às organizações, apenas fornecemos equipamento de proteção e bens essenciais. "
+      "content": "Não. O Minho Covid-19 não presta apoio financeiro às organizações, apenas fornecemos equipamento de proteção e bens essenciais."
+    },
+    {
+      "title": "O que farão ao dinheiro angariado caso sobre?",
+      "content": "Existirão sempre formas de ajudar as instituições com a aquisição de outros equipamentos e bens que necessitem e, ainda, auxiliar novos projetos."
+    },
+    {
+      "title": "Como posso apresentar um novo projeto, para futura parceria?",
+      "content": "Basta entrarem em contacto connosco, enviando um e-mail com uma pequena descrição do projeto. Entraremos em contacto o mais brevemente possível."
     },
     {
       "title": "Como posso levantar o meu pedido?",
@@ -80,10 +100,6 @@
     {
       "title": "Como são feitas as escolhas de materiais a comprar?",
       "content": "Através dos pedidos realizados, é feito um levantamento das necessidades e avaliada a sua urgência. "
-    },
-    {
-      "title": "O que farão ao dinheiro angariado caso sobre?",
-      "content": "Existirá sempre forma de ajudar as instituições com a aquisição de outros equipamentos e bens que necessitem."
     }
   ]
 }

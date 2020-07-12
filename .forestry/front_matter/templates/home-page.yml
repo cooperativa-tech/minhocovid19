@@ -41,13 +41,13 @@ fields:
     default: 0
     required: true
     config:
-      min:
-      max:
-      step:
+      min: 
+      max: 
+      step: 
   config:
-    min:
-    max:
-    labelField:
+    min: 
+    max: 
+    labelField: 
   label: STATS
 - type: text
   name: cta1Title
@@ -94,9 +94,9 @@ fields:
       required: true
     label: Title
   config:
-    min:
-    max:
-    labelField:
+    min: 
+    max: 
+    labelField: 
   label: INSTITUTIONS LIST
 - type: text
   name: institutionsAction
