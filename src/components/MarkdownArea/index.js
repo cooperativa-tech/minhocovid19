@@ -51,7 +51,7 @@ function MarkdownArea({ children, theme, headingsTheme }) {
 
   return (
     <ReactMarkdown
-      className={styles.root + " " + styles[theme]}
+      className={`${styles.root} ${styles[theme]}`}
       source={children}
       renderers={renderers}
     />
