@@ -24,9 +24,20 @@
   }
 }
 
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (width < $Breakpoint-tablet) {
+    flex-direction: column;
+  }
+}
+
 .social {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 
 .socialItem {
@@ -37,4 +48,22 @@
     width: $size-48;
     margin-right: $size-20;
   }
+}
+
+.extraLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  @media (width < $Breakpoint-tablet) {
+    margin-top: $size-26;
+  }
+}
+
+.extraLinks a {
+  padding-bottom: $size-8;
+}
+
+.extraLinks a:first-child {
+  margin-right: $size-32;
 }

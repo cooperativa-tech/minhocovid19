@@ -1,0 +1,6 @@
+@import "../styles/settings.css";
+
+.root {
+  max-width: $ten-columns;
+  margin: $size-112 auto;
+}

@@ -7,7 +7,17 @@
 
   font-size: $size-20;
   line-height: $size-26;
+
   text-decoration: none;
+
+  @media (width < $Breakpoint-mobile) {
+    font-size: $size-16;
+    line-height: $size-20;
+  }
+}
+
+.root:hover {
+  opacity: 0.8;
 }
 
 .root.selected {
