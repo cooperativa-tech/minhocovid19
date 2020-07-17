@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import PropTypes from "prop-types";
+import { motion, AnimatePresence } from "framer-motion";
 import uniqueId from "lodash.uniqueid";
 
 import arrow from "root/assets/arrow.svg?include";
@@ -21,8 +22,13 @@ function Faq({ title, content }) {
   }
 
   return (
-    <div className={styles.root}>
-      <div className={styles.header} onClick={toggleOpen} role="presentation">
+    <motion.div className={styles.root} layout>
+      <motion.div
+        className={styles.header}
+        onClick={toggleOpen}
+        role="presentation"
+        layout
+      >
         <SmallTitle theme={Themes.goldYellow}>{title}</SmallTitle>
 
         <WithScript>
@@ -37,14 +43,22 @@ function Faq({ title, content }) {
             <SvgIncluder svg={arrow} />
           </button>
         </WithScript>
-      </div>
+      </motion.div>
 
       <WithScript>
-        <div
-          id={contentId}
-          className={`${styles.content} ${open ? "" : styles.hidden}`}
-        >
-          <MarkdownArea theme={Themes.goldYellow}>{content}</MarkdownArea>
+        <div id={contentId} className={styles.content}>
+          <AnimatePresence>
+            {open && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                layout
+              >
+                <MarkdownArea theme={Themes.goldYellow}>{content}</MarkdownArea>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </WithScript>
 
@@ -53,7 +67,7 @@ function Faq({ title, content }) {
           <MarkdownArea theme={Themes.goldYellow}>{content}</MarkdownArea>
         </div>
       </NoScript>
-    </div>
+    </motion.div>
   );
 }
 
