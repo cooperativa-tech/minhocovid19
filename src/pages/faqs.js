@@ -10,7 +10,6 @@ import Themes from "root/components/Themes";
 import TextArea from "root/components/TextArea";
 
 import styles from "./faqs.module.css";
-import { motion, AnimateSharedLayout } from "framer-motion";
 
 export default function FaqsPage() {
   return (
@@ -31,15 +30,13 @@ export default function FaqsPage() {
         </Section>
       </div>
 
-      <AnimateSharedLayout>
-        <motion.div className={styles.faqs} layout>
-          {content.faqs.map((faq, index) => (
-            <div key={index} className={styles.faq}>
-              <Faq {...faq} />
-            </div>
-          ))}
-        </motion.div>
-      </AnimateSharedLayout>
+      <div className={styles.faqs}>
+        {content.faqs.map((faq, index) => (
+          <div key={index} className={styles.faq}>
+            <Faq {...faq} />
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 }

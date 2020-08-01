@@ -1,21 +1,28 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import uniqueId from "lodash.uniqueid";
+import { renderToString } from "preact-render-to-string";
 
 function WithScript({ children }) {
   const elementId = useMemo(() => uniqueId("with_script_"), []);
+  const renderNoscriptContent = () =>
+    renderToString(
+      <style>
+        {`
+          #${elementId}{
+            display: none;
+          }
+        `}
+      </style>
+    );
 
   return (
     <>
-      <noscript>
-        <style>
-          {`
-            #${elementId}{
-              display: none;
-            }
-          `}
-        </style>
-      </noscript>
+      {process.browser && (
+        <noscript
+          dangerouslySetInnerHTML={{ __html: renderNoscriptContent() }}
+        />
+      )}
 
       <div id={elementId}>{children}</div>
     </>
