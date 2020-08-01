@@ -13,6 +13,7 @@ function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" />
       </Head>
       <Component {...pageProps} />
     </>
