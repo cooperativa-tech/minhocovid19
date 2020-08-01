@@ -20,6 +20,7 @@ function WithScript({ children }) {
     <>
       {process.browser && (
         <noscript
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: renderNoscriptContent() }}
         />
       )}
