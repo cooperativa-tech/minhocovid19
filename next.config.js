@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const withOptimizedImages = require("next-optimized-images");
 const withPrefresh = require("@prefresh/next");
 
@@ -7,15 +8,16 @@ const config = {
     polyfillsOptimization: true,
   },
 
-  webpack(config, { dev, isServer }) {
-    const splitChunks = config.optimization && config.optimization.splitChunks;
+  webpack(webpackConfig, { dev, isServer }) {
+    const splitChunks =
+      webpackConfig.optimization && webpackConfig.optimization.splitChunks;
+
     if (splitChunks) {
-      const cacheGroups = splitChunks.cacheGroups;
+      const { cacheGroups } = splitChunks;
       const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
+
       if (cacheGroups.framework) {
-        cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
-          test: preactModules,
-        });
+        cacheGroups.preact = { ...cacheGroups.framework, test: preactModules };
         cacheGroups.commons.name = "framework";
       } else {
         cacheGroups.preact = {
@@ -27,22 +29,27 @@ const config = {
     }
 
     // Install webpack aliases:
-    const aliases = config.resolve.alias || (config.resolve.alias = {});
-    aliases.react = aliases["react-dom"] = "preact/compat";
+    const aliases =
+      webpackConfig.resolve.alias || (webpackConfig.resolve.alias = {});
+
+    aliases.react = "preact/compat";
+    aliases["react-dom"] = "preact/compat";
 
     // inject Preact DevTools
     if (dev && !isServer) {
-      const entry = config.entry;
-      config.entry = () =>
+      const { entry } = webpackConfig;
+
+      webpackConfig.entry = () =>
         entry().then((entries) => {
           entries["main.js"] = ["preact/debug"].concat(
             entries["main.js"] || []
           );
+
           return entries;
         });
     }
 
-    return config;
+    return webpackConfig;
   },
 };
 
