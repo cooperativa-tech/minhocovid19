@@ -14,9 +14,9 @@ This is a Next.js project built and deployed on Netlify.
 
 To get started run `bin/setup`. This script sets up the `node` environment with `asdf` and install all dependencies.
 
-Before starting your adventure, you need an API key for Airtable. You can get those from our Keybase or a Cooperativa developer. Add that variable to the `.envrc` file. That file is not checked by `git` and is created during the `bin/setup` script.
+Before starting your adventure, you need an API key for Airtable. You can get those from our Keybase or a Cooperativa developer. Add that variable to the `.env` file. That file is not checked by `git` and is created during the `bin/setup` script.
 
-The environment variables are loaded in our `bin/scripts`. You can use something like `direnv` for that but it's not needed. Our scripts handle loading the `.envrc` file always.
+The environment variables are loaded in our `bin/scripts`. You can use something like `direnv` for that but it's not needed. Our scripts handle loading the `.env` file always.
 
 After that, just run `bin/server` and go for it!
 

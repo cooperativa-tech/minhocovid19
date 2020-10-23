@@ -6,11 +6,11 @@ set -e
 env=${1:-"dev"}
 
 pp_info "setup" "Setting up the env..."
-if [ ! -f .envrc ]; then
-  cp .envrc.sample .envrc
-  printf "env file created, you might want to open .envrc and set the correct values. We recommend using direnv to manage it.\n\n"
+if [ ! -f .env ]; then
+  cp .env.sample .env
+  printf "env file created, you might want to open .env and set the correct values. We recommend using direnv to manage it.\n\n"
 else
-  printf "envrc file already exists, skipping...\n\n"
+  printf "env file already exists, skipping...\n\n"
 fi
 
 pp_info "setup" "Installing required languages..."
@@ -42,7 +42,7 @@ if not_installed "yarn"; then
   exit -1
 fi
 
-. "./.envrc"
+. "./.env"
 
 echo ""
 pp_info "setup" "Installing node dependencies..."

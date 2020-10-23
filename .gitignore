@@ -39,7 +39,7 @@ jspm_packages
 .next
 .DS_Store
 out
-.envrc
+.env
 .env
 
 # Local Netlify folder
