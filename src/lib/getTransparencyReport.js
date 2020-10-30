@@ -16,6 +16,7 @@ export default function getTransparencyReport() {
       .eachPage(
         function page(records, fetchNextPage) {
           records.forEach((record) => {
+            const id = record.getId();
             const purpose = record.get("Propósito");
             const date = record.get("Data");
             const value = record.get("Valor");
@@ -23,6 +24,7 @@ export default function getTransparencyReport() {
             if (!purpose || !date || !value) return;
 
             totalRecords.push({
+              id,
               purpose,
               date,
               value,

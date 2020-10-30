@@ -8,7 +8,7 @@ import Navbar from "root/components/Navbar";
 
 import styles from "./privacy.module.css";
 
-export default function Privacy() {
+export default function PrivacyPage() {
   return (
     <Layout
       title={content.title}
