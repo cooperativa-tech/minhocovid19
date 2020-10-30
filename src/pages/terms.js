@@ -8,7 +8,7 @@ import Navbar from "root/components/Navbar";
 
 import styles from "./terms.module.css";
 
-export default function Terms() {
+export default function TermsPage() {
   return (
     <Layout
       title={content.title}

@@ -44,4 +44,4 @@ Feel free to contribute however you please. Be respectful and always remind our 
 
 > Want? Do it :sunglasses:
 
-If you need an API key reach out to us.
+If you need an Airtable API key reach out to us.

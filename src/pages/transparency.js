@@ -13,7 +13,7 @@ import Themes from "root/components/Themes";
 
 import styles from "./transparency.module.css";
 
-export default function HomePage({ transparencyReport }) {
+export default function TransparencyPage({ transparencyReport }) {
   return (
     <Layout
       title={content.title}
@@ -45,8 +45,8 @@ export default function HomePage({ transparencyReport }) {
           </div>
         </div>
 
-        {transparencyReport.map((reportLine, index) => (
-          <span key={index} className={styles.tableRow}>
+        {transparencyReport.map((reportLine) => (
+          <span key={reportLine.id} className={styles.tableRow}>
             <div className={styles.dateCol}>
               <Text theme={Themes.blue}>{reportLine.date}</Text>
             </div>
@@ -83,15 +83,18 @@ export default function HomePage({ transparencyReport }) {
   );
 }
 
-HomePage.propTypes = {
+TransparencyPage.propTypes = {
   transparencyReport: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      purpose: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
     })
   ).isRequired,
 };
 
-export async function getStaticProps(_context) {
+export async function getStaticProps() {
   return {
     props: {
       transparencyReport: await getTransparencyReport(),
